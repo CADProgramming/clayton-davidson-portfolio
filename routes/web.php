@@ -45,4 +45,4 @@ Route::get('/weeks', function () {
     return view('weekscontents');
 });
 
-Route::get('/weeks/{week}', 'WeekController@show');
+Route::get('/weeks/{week_number}', 'WeekController@show');
