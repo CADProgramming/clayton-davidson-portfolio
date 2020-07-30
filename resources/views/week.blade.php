@@ -11,15 +11,15 @@
                         @if ($post_data[$p]->inclass)
                             <div class="session-divider">
                                 <h2 class="section-header">{{ $post_data[$p]->title }} ({{ date('jS \of F', strtotime($post_data[$p]->date)) }})</h2>
-                                @for ($s = 0; $s < count($section_data); $s++)
-                                    @if ($section_data[$s]->post_id == $post_data[$p]->id)
-                                        @if ($section_data[$s]->title != '')
-                                            <h2>{{ $section_data[$s]->title }}</h2>
+                                @for ($s = 0; $s < count($section_data[$p]); $s++)
+                                    @if ($section_data[$p][$s]->post_id == $post_data[$p]->id)
+                                        @if ($section_data[$p][$s]->title != '')
+                                            <h2>{{ $section_data[$p][$s]->title }}</h2>
                                         @endif
-                                        @for ($c = 0; $c < count($content_data); $c++)
-                                            @if ($content_data[$c]->section_id == $section_data[$s]->id)
-                                                <h3>{{ $content_data[$c]->title }}</h3>
-                                                <div>{!! $content_data[$c]->body !!}</div>
+                                        @for ($c = 0; $c < count($content_data[$p]); $c++)
+                                            @if ($content_data[$p][$c]->section_id == $section_data[$p][$s]->id)
+                                                <h3>{{ $content_data[$p][$c]->title }}</h3>
+                                                <div class="content-div">{!! $content_data[$p][$c]->body !!}</div>
                                             @endif
                                         @endfor
                                     @endif
@@ -34,15 +34,15 @@
                         @if ($post_data[$p]->inclass == false)
                             <div class="session-divider">
                                 <h2 class="section-header">{{ $post_data[$p]->title }} ({{ date('jS \of F', strtotime($post_data[$p]->date)) }})</h2>
-                                @for ($s = 0; $s < count($section_data); $s++)
-                                    @if ($section_data[$s]->post_id == $post_data[$p]->id)
-                                        @if ($section_data[$s]->title != '')
-                                            <h2>{{ $section_data[$s]->title }}</h2>
+                                @for ($s = 0; $s < count($section_data[$p]); $s++)
+                                    @if ($section_data[$p][$s]->post_id == $post_data[$p]->id)
+                                        @if ($section_data[$p][$s]->title != '')
+                                            <h2>{{ $section_data[$p][$s]->title }}</h2>
                                         @endif
-                                        @for ($c = 0; $c < count($content_data); $c++)
-                                            @if ($content_data[$c]->section_id == $section_data[$s]->id)
-                                                <h3>{{ $content_data[$c]->title }}</h3>
-                                                <div>{!! $content_data[$c]->body !!}</div>
+                                        @for ($c = 0; $c < count($content_data[$p]); $c++)
+                                            @if ($content_data[$p][$c]->section_id == $section_data[$p][$s]->id)
+                                                <h3>{{ $content_data[$p][$c]->title }}</h3>
+                                                <div>{!! $content_data[$p][$c]->body !!}</div>
                                             @endif
                                         @endfor
                                     @endif

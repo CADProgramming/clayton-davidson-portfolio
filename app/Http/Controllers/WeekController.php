@@ -19,21 +19,26 @@ class WeekController extends Controller
             ->where('posts.week_id', '=', $week_number)
             ->get();
 
-        $section_data;
-        $content_data;
+        $section_data = [];
+        $content_data = [];
 
-        foreach ($post_data as $post) {
-            $section_data = DB::table('sections')
+        for ($p = 0; $p < count($post_data); $p++) {
+            $section_data[] = DB::table('sections')
                 ->select('sections.*')
-                ->where('sections.post_id', '=', $post->id)
+                ->where('sections.post_id', '=', $post_data[$p]->id)
                 ->get();
         }
 
-        foreach ($section_data as $section) {
-            $content_data = DB::table('contents')
-                ->select('contents.*')
-                ->where('contents.section_id', '=', $section->id)
-                ->get();
+        for ($p = 0; $p < count($post_data); $p++) {
+            for ($s = 0; $s < count($section_data[$p]); $s++) {
+                $content_data[] = DB::table('contents')
+                    ->join('sections', 'contents.section_id', '=', 'sections.id')
+                    ->select('contents.*')
+                    ->where([
+                        ['sections.post_id', '=', $post_data[$p]->id],
+                        ['contents.section_id', '=', $section_data[$p][$s]->id],
+                    ])->get();
+            }
         }
 
         return view('week', [
