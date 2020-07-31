@@ -31,7 +31,7 @@ class WeekController extends Controller
 
         for ($p = 0; $p < count($post_data); $p++) {
             for ($s = 0; $s < count($section_data[$p]); $s++) {
-                $content_data[] = DB::table('contents')
+                $content_data[$p][] = DB::table('contents')
                     ->join('sections', 'contents.section_id', '=', 'sections.id')
                     ->select('contents.*')
                     ->where([
