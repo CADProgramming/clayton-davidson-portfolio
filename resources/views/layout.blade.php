@@ -14,11 +14,11 @@
     <nav>
         <a class="{{ Request::path() === '/' ? 'nav-selected' : '' }}" href="/">Home</a>
         <a class="{{ Request::path() === 'weeks/1' ? 'nav-selected' : '' }}" href="/weeks/1">Week 1</a>
-        <a class="{{ Request::path() === 'week2' ? 'nav-selected' : '' }}" href="/week2">Week 2</a>
-        <a class="{{ Request::path() === 'week3' ? 'nav-selected' : '' }}" href="/week3">Week 3</a>
-        <a class="{{ Request::path() === 'week4' ? 'nav-selected' : '' }}" href="/week4">Week 4</a>
-        <a class="{{ Request::path() === 'week5' ? 'nav-selected' : '' }}" href="/week5">Week 5</a>
-        <a class="{{ Request::path() === 'week6' ? 'nav-selected' : '' }}" href="/week6">Week 6</a>
+        <a class="{{ Request::path() === 'weeks/2' ? 'nav-selected' : '' }}" href="/weeks/2">Week 2</a>
+        <a class="{{ Request::path() === 'weeks/3' ? 'nav-selected' : '' }}" href="/weeks/3">Week 3</a>
+        <a class="{{ Request::path() === 'weeks/4' ? 'nav-selected' : '' }}" href="/weeks/4">Week 4</a>
+        <a class="{{ Request::path() === 'weeks/5' ? 'nav-selected' : '' }}" href="/weeks/5">Week 5</a>
+        <a class="{{ Request::path() === 'weeks/6' ? 'nav-selected' : '' }}" href="/weeks/6">Week 6</a>
     </nav>
     @yield ('content')
     <footer>

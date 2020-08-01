@@ -17,6 +17,20 @@
                                         @for ($c = 0; $c < count($content_data[$p][$s]); $c++)
                                             @if ($content_data[$p][$s][$c]->section_id == $section_data[$p][$s]->id)
                                                 <h3>{{ $content_data[$p][$s][$c]->title }}</h3>
+                                                @php
+                                                    $img_count = 0
+                                                @endphp
+                                                @for ($i = 0; $i < count($image_data); $i++)
+                                                    @if ($image_data[$i]->id == $content_data[$p][$s][$c]->id)
+                                                        <img src="{{ asset($image_data[$i]->img_path) }}" alt="" style="{{ $image_data[$i]->img_style }}">
+                                                        @php
+                                                            $img_count++
+                                                        @endphp
+                                                        @if ($img_count == $content_data[$p][$s][$c]->image_count)
+                                                            <br><br>
+                                                        @endif
+                                                    @endif
+                                                @endfor
                                                 <div class="content-div">{!! $content_data[$p][$s][$c]->body !!}</div>
                                             @endif
                                         @endfor
@@ -38,6 +52,20 @@
                                         @for ($c = 0; $c < count($content_data[$p][$s]); $c++)
                                             @if ($content_data[$p][$s][$c]->section_id == $section_data[$p][$s]->id)
                                                 <h3>{{ $content_data[$p][$s][$c]->title }}</h3>
+                                                @php
+                                                    $img_count = 0
+                                                @endphp
+                                                @for ($i = 0; $i < count($image_data); $i++)
+                                                    @if ($image_data[$i]->id == $content_data[$p][$s][$c]->id)
+                                                        <img src="{{ asset($image_data[$i]->img_path) }}" alt="" style="{{ $image_data[$i]->img_style }}">
+                                                        @php
+                                                            $img_count++
+                                                        @endphp
+                                                        @if ($img_count == $content_data[$p][$s][$c]->image_count)
+                                                            <br><br>
+                                                        @endif
+                                                    @endif
+                                                @endfor
                                                 <div>{!! $content_data[$p][$s][$c]->body !!}</div>
                                             @endif
                                         @endfor

@@ -13,6 +13,11 @@ class WeekController extends Controller
         $week_data = DB::table('weeks')
             ->where('weeks.id', '=', $week_number)
             ->get();
+
+        if (count($week_data) == 0)
+        {
+            abort(404);
+        }
         
         $post_data = DB::table('posts')
             ->select('posts.*')
@@ -41,11 +46,18 @@ class WeekController extends Controller
             }
         }
 
+        $image_data = DB::table('contents')
+            ->join('image_lists', 'contents.id', '=', 'image_lists.content_id')
+            ->join('images', 'image_lists.image_id', '=', 'images.id')
+            ->select('contents.id', 'images.img_path', 'images.img_style')
+            ->get();
+
         return view('week', [
             'week_data' => $week_data,
             'post_data' => $post_data,
             'section_data' => $section_data,
             'content_data' => $content_data,
+            'image_data' => $image_data,
         ]);
     }
 }
