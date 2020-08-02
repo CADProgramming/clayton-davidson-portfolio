@@ -98,4 +98,105 @@ INSERT INTO image_lists (content_id, image_id) VALUES (19, 11);
 
 INSERT INTO sections (title, post_id) VALUES ('How Does this relate back to the 12 principles', 3);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I have independantly progressed through the Laravel tutorials up to episode 9.<br><br>', 7)
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I have independantly progressed through the Laravel tutorials up to episode 9.<br><br>', 7);
+
+
+
+
+
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-2/Class2.PNG', 'width: 500px;');
+
+
+
+INSERT INTO weeks (week_start, week_end) VALUES ('2020-07-27', '2020-08-02');
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020-07-28', 2);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 4);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Converted my github pages portfolio to a laravel application', 'I decided that instead of repeating HTML on every page, with the additional hassel of creating HTML for every post entry in my portfolio, I would create a Laravel application instead. I have created a layout view that can be repeated for each page and have figured out how to embed basic information in the page using laravel.', 8);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Made more progress through the tutorials', 'I have been learning about how you can call specific methods in controllers, using the show method to display an individual database entry. The tutorials have gone over navigating to different pages using the nav bar, live css styling, and passing information about a post to the url as a wildcard after clicking on its \'a\' tag. This allows us to create an index page for all of the data in the database.', 8);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by next meeting?', 4);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Finish Week 1 of my portfolio', 'I would like to have week 1 completely finished because that would allow me to use week 1 as a template for all other weeks, meaning that I can just insert data into the database and it will append to my portfolio automatically.', 9);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Make significant progress through the laravel tutorials on Laracasts', 'I would like to be up to the form creation tutorials so that I can understand how to create a CRUD app in laravel. This knowledge will be crucial to next week.', 9);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What is getting in your way?', 4);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Images are not displaying on my laravel application', 'At the moment when I try to load the image tags from the text in my database the laravel is not converting from a string to laravel, like the HTML does. This means that the sources for all the images are wrong, which causes the images to return 404 errors instead of loading on the page.', 10);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Text is not showing on my second class post of week 1', 'The text will load from the database for the first post but I can\'t seem to loop over the text for the second post. I might need to restructure the data being passed to the view so that I can access it.', 10);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 4);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Tried to connect my laravel application to mariadb', 'I spent most of this class trying to connect my laravel application to mariadb. Due to the lack of online resources, I was unable to figure out a solution. I will wait until Grayson has found a solution, to connect my database to mariadb.', 11);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Introduction to SCRUM', 'I had my first SCRUM meeting with our team where we went over the three questions shown in this portfolio class post. I gave the team a report of my progress and what was stopping me from progressing. This was a good practice of the meetings we will have during the sprints.', 11);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 4);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 12);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020-07-31', 2);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 5);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Loading text from a database by using PHP queries', 'I have learnt how to create a PHP query and use the data objects that returns in a view. I pass all of the data from my portfolio database to my week controller which redirects it to the week view.', 13);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by the next meeting?', 5);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Import images correctly', 'By the next session I would like to have week 1 of my portfolio completed so that I can work on week 2. I am figuring out a new way to load the images from my database. I think that I will need to add an image table and an image list table.', 14);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Complete the forms Laracasts tutorials', 'I want to know how to create and update values in my database using PHP. This will allow me to help implement the key CRUD aspects of our laravel project during the first sprint.', 14);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Start week 2 of my portfolio', 'I want to maintain my portfolio throughout the semester and feel like I need to have week 2 at least started before our next class.', 14);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What is getting in your way?', 5);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Displaying images from my database in my portfolio', 'I still have not figured out how to fix my pathing issue to correctly source my images using my database.', 15);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 5);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Loaded data from database using PHP query', 'I have figuered out how to construct a PHP query to access the data from my SQL database. I can query in all of the text and display it correctly on my view. I figured this out today during class.', 16);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Github practice in preperation for Sprint 1', 'Today during class, I learnt how to create issues and add them to the project board. We did this so that during the Sprint next week we will be able to start our project by converting the coach\'s use cases into issues we can work on.', 16);
+INSERT INTO image_lists (content_id, image_id) VALUES (36, 12);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 5);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 17);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Study', FALSE, '2020-07-28', 2);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do outside of class?', 6);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Fixed image loading', 'I added an image table and an image list table to my database. This allows me to create an image in the database, and specify its path and styling. Now I can attach multiple images to my contents data values, using the image list table to join the image to a specific content.', 18);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Learning about laravel URL conventions and the 7 main controller methods', 'I watched all of the tutorial videos up to video 26. Now I know the general idea of creating and updating the database using PHP and laravel. The main methods in the controller should be: show (individual data entry), index (list of data entries), create (create a new data entry using a form view), store (stores the new value in the database), update (retrieves a value from the database for editing and displays it in a form), edit (replaces the database value with the provided values), delete (removes a value from the database).', 18);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Learning about data creation and updating using forms in laravel views', 'The tutorials have showed me how to pass the data from the view\'s form using GET and POST to send the data to the controller and then to the database after validation. Validation is important because it prevents corrupt or null data from getting to the database and causing issues.', 18);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 6);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 19);

@@ -3,7 +3,7 @@
 @section ('content')
     <div class="main-container">
         <div class="sub-container">
-            <h1>Week {{ $week_data[0]->id }}: {{ date('jS', strtotime($week_data[0]->week_start)) }} - {{ date('jS \of F', strtotime($week_data[0]->week_end)) }}</h1>
+            <h1>Week {{ $week_data[0]->id }}: {{ date('jS \of F', strtotime($week_data[0]->week_start)) }} - {{ date('jS \of F', strtotime($week_data[0]->week_end)) }}</h1>
             <div>
                 <section class="during-class">
                     <h2>During Class Work</h2>
