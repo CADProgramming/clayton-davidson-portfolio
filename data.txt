@@ -104,6 +104,7 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Princi
 
 
 
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-2/PHPQuery.PNG', 'width: 600px;');
 INSERT INTO images (img_path, img_style) VALUES ('./img/week-2/Class2.PNG', 'width: 500px;');
 
 
@@ -145,7 +146,15 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Introd
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 4);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 12);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 4 "Responding to Change Over Following a Plan"', 'I had started creating a static HTML website for my portfolio, but I decided that it would be far more efficient and effective if I produced a laravel application instead. Instead of following a plan I had established, I responded to change and ended up with something better and more useful.', 12);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 5 "Support, trust, and motivate the people involved"', 'This lesson introduced us to SCRUM, the industry standard meeting technique. I was able to see where my team members were up to and motivate them to keep doing the tutorials so that we would all be prepared for the following week.', 12);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions', 'Because we were doing work during class, it allowed us to be in the same location. This made me able to communicate easily with my team members.', 12);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 10 "Simplicity"', 'I was going to make my portfolio create, edit, and delete posts using PHP and laravel but decided not to. My portfolio is the bare minimum to allow me to add content and display my work, even if the data must be entered manually.', 12);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I am independantly learning laravel using the Laracasts tutorial platform. By independantly learning this programming framework I will be ready to start the project sprints next week.<br><br>', 12);
 
 
 
@@ -154,7 +163,8 @@ INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020
 
 INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 5);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Loading text from a database by using PHP queries', 'I have learnt how to create a PHP query and use the data objects that returns in a view. I pass all of the data from my portfolio database to my week controller which redirects it to the week view.', 13);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Loading text from a database by using PHP queries', 'I have learnt how to create a PHP query and use the data objects that returns in a view. I pass all of the data from my portfolio database to my week controller which redirects it to the week view.', 13);
+INSERT INTO image_lists (content_id, image_id) VALUES (34, 12);
 
 
 INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by the next meeting?', 5);
@@ -176,12 +186,14 @@ INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 5
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Loaded data from database using PHP query', 'I have figuered out how to construct a PHP query to access the data from my SQL database. I can query in all of the text and display it correctly on my view. I figured this out today during class.', 16);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Github practice in preperation for Sprint 1', 'Today during class, I learnt how to create issues and add them to the project board. We did this so that during the Sprint next week we will be able to start our project by converting the coach\'s use cases into issues we can work on.', 16);
-INSERT INTO image_lists (content_id, image_id) VALUES (36, 12);
+INSERT INTO image_lists (content_id, image_id) VALUES (40, 13);
 
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 5);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 17);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions', 'Because we were doing work during class, it allowed us to be in the same location. This made me able to communicate easily with my team members.', 17);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I am independantly learning laravel using the Laracasts tutorial platform. By independantly learning this programming framework I will be ready to start the project sprints next week.<br><br>', 17);
 
 
 
@@ -199,4 +211,4 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Learni
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 6);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 19);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I am independantly learning laravel using the Laracasts tutorial platform. By independantly learning this programming framework I will be ready to start the project sprints next week.<br><br>', 19);
