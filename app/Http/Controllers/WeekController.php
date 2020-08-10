@@ -60,4 +60,9 @@ class WeekController extends Controller
             'image_data' => $image_data,
         ]);
     }
+
+    public function index()
+    {
+        return view('home');
+    }
 }

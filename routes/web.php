@@ -17,32 +17,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/week1', function () {
-    return view('week1');
-});
-
-Route::get('/week2', function () {
-    return view('week1');
-});
-
-Route::get('/week3', function () {
-    return view('week1');
-});
-
-Route::get('/week4', function () {
-    return view('week1');
-});
-
-Route::get('/week5', function () {
-    return view('week1');
-});
-
-Route::get('/week6', function () {
-    return view('week1');
-});
-
-Route::get('/weeks', function () {
-    return view('weekscontents');
-});
+Route::get('/weeks', 'WeekController@index');
 
 Route::get('/weeks/{week_number}', 'WeekController@show');
