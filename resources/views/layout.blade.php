@@ -17,5 +17,5 @@
         <div>CADProgramming Clayton_Davidson Davica3 1000061387</div>
     </footer>
 </body>
-<script src="{{ asset('./js/scroll_to_top.js') }}"></script>
+<script src="./js/scroll_to_top.js"></script>
 </html>
