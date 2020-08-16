@@ -350,10 +350,16 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- One of
 INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 10);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added file size limit on image upload.', 'After client review, our client wanted me to add a file size limit to stop users from uploading extreme resolution images when creating a new game in the database. So I spent some time implementing this feature.', 38);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Had a client review', 'I had our client review the game creation feature. He approved it and said he would like a file size restriction on the image upload so that users couldn\'t break the site by uploading massive files.', 38);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Had our SCRUM meeting', 'I as the SCRUM master got our group to meet and talk about our progress. The other team members are making good progress on their work and so am I.', 38);
 
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 10);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 39);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 39);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 1 "Customer satisfaction through early and continuous software delivery"', 'I successfully completed the add game feature so that I had something to show our client.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 3 "Frequent delivery of working software"', 'This is the 7th feature that I have implemented, showing the client that progress is being made frequently.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 5 "Support, trust, and motivate the people involved"', 'The SCRUM meeting that I made our team have helps everyone to stay motivated and feel accountable for their progress. This helps our team to also help eachother.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 6 "Enable face-to-face interactions"', 'More work during class enables us to talk to eachother in person which is the strongest way our team can communicate.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 7 "Working software is the primary measure of progress"', 'All of the features including the latest one, add game, are fully functional.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 10 "Simplicity"', 'I have not yet started the implementation of the highscores as at this point they are not necessary.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 12 "Regular reflections on how to become more effective"', 'This portfolio is a reflection of my work and helps me to see where I can improve.', 39);
