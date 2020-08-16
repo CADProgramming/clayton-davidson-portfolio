@@ -49,7 +49,6 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Princi
 
 
 
-
 INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020-07-24', 1);
 
 
@@ -71,7 +70,6 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Princi
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'Because we were in class, I was able to help my team memebers expand their understanding of Laravel and how the MVC model works. It also made discussing our repository setup and general group direction easier.', 5);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 10 "Simplicity"', 'The only thing that we have in our repository at this point is the default application. I think that it\'s a good idea to wait until we have a better understanding of Laravel and the project we are creating before investing too much time into this inital project. This supports the idea of simplicity.', 5);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'Everyone in our team including myself are currently progressing through the Laravel tutorials independantly.<br><br>', 5);
-
 
 
 
@@ -282,3 +280,80 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principl
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 10 "Simplicity"', 'Mainly with the database, I have drawn up a reasonable sized database, but I am only implementing it as the client requires it. Allowing us to do only required work.', 29);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'As this week\'s scrum master I have not had to oversee or interfere with the progress of my team members. Their independant working shows that they are confident in what they are doing. They also communicate their progress.<br><br>', 29);
 
+
+
+
+
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-3/usermigration.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-3/loginform.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-3/loginusernameemail.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-3/regoform.PNG', 'width: 650px;');
+
+
+
+INSERT INTO weeks  (week_start, week_end) VALUES ('2020-08-10', '2020-08-16');
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020-08-11', 4);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 9);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed Game model migration', 'I have completed the migration that creates the game table and its fields. It has a title, description, release date and an image.', 30);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Made progress on Game Controller', 'The game controller has all seven methods that can be implemented. I have implemented the create method which redirects the user to the game creation view.', 30);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added add game creation form', 'I have completed the game creation view which will allow the user to create a game and add it to the application\'s database', 30);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What do I want to have completed by the next meeting?', 9);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Game controller model', 'I want to have completed the required features that are in this file. This will mean that you will be able to create and store the new game in the database.', 31);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What is in my way?', 9);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I am having trouble remembering how to do it', 'I will have to go over the tutorials again to revise on how to post the data from the form and how all the routes work.', 32);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 9);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- More work on the game controller', 'I have made some progress on the game controller. I have started re-watching the required tutorials, setting up the routes, and beginning to validate the data.', 33);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 9);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 2 "Frequent delivery of working software"', 'My main focus is to produce this as a working feature by the end of the sprint.', 34);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 6 "Enable face-to-face interactions"', 'We focus on getting the bulk of the work done during class so that we can communicate with eachother and make sure that we are working as a team.', 34);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 10 "Simplicity"', 'The file contains all seven main controller methods. At this point in time we only need four of them and so I am only implementing those four methods.', 34);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020-08-14', 4);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 10);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed Game model migration', 'I have completed the migration that creates the game table and its fields. It has a title, description, release date and an image.', 35);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed Game model migration', '', 35);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What do I want to have completed by the next meeting?', 10);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- All completed features merged into master', 'I want our master branch to be as up to date as everything so that we have a good starting point for the next sprint.', 36);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What is in my way?', 10);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- One of our team members was absent', 'One of our team members was not well and absent from our last class of this sprint. This means that we were unable to communicate our plans for ending this sprint.', 37);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 10);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added file size limit on image upload.', 'After client review, our client wanted me to add a file size limit to stop users from uploading extreme resolution images when creating a new game in the database. So I spent some time implementing this feature.', 38);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 10);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '', '', 39);
