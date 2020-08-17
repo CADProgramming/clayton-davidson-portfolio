@@ -230,12 +230,12 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Set up b
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 7);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Value 2 "Working Software Over Comprehensive Documentation"', 'The only documentation we have produced so far is towards the database. Databases need at least one thing documenting their design to help with implementation. Everything else however, is represented by its direct implementation.', 24);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Value 4 "Responding to Change Over Following a Plan"', 'Our plan only lasts to the end of this sprint. This allows for the client to change his mind on the direction of the features we are creating. This stops us from getting caught up in our own ideas and wasting time.', 24);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 6 "Enable face-to-face interactions"', 'Our group has done most of our work in class which helps keep us all on the same page. This communication makes our project move forwards.', 24);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 10 "Simplicity"', 'Mainly with the database, I have drawn up a reasonable sized database, but I am only implementing it as the client requires it. Allowing us to do only required work.', 24);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'As this week\'s scrum master I have not had to oversee or interfere with the progress of my team members. Their independant working shows that they are confident in what they are doing. They also communicate their progress.', 24);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 12 "Regular reflections on how to become more effective"', 'Every time we meet we do a SCRUM meeting and reflect on everyone\'s progress.<br><br>', 24);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 2 "Working Software Over Comprehensive Documentation"', 'The only documentation we have produced so far is towards the database. Databases need at least one thing documenting their design to help with implementation. Everything else however, is represented by its direct implementation.', 24);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 4 "Responding to Change Over Following a Plan"', 'Our plan only lasts to the end of this sprint. This allows for the client to change his mind on the direction of the features we are creating. This stops us from getting caught up in our own ideas and wasting time.', 24);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'Our group has done most of our work in class which helps keep us all on the same page. This communication makes our project move forwards.', 24);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 10 "Simplicity"', 'Mainly with the database, I have drawn up a reasonable sized database, but I am only implementing it as the client requires it. Allowing us to do only required work.', 24);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'As this week\'s scrum master I have not had to oversee or interfere with the progress of my team members. Their independant working shows that they are confident in what they are doing. They also communicate their progress.', 24);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 12 "Regular reflections on how to become more effective"', 'Every time we meet we do a SCRUM meeting and reflect on everyone\'s progress.<br><br>', 24);
 
 
 
@@ -270,24 +270,24 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Intervie
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 8);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Value 2 "Working Software Over Comprehensive Documentation"', 'The only documentation we have produced so far is towards the database. Databases need at least one thing documenting their design to help with implementation. Everything else however, is represented by its direct implementation.', 29);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Value 3 "Customer Collaboration Over Contract Negotiation"', 'This is represented by our inital meeting with our client Grayson. We established a direction and some goals that we wanted to have completed by the end of the sprint and will change to suit the needs of Grayson throughout the development process.', 29);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Value 4 "Responding to Change Over Following a Plan"', 'Our plan only lasts to the end of this sprint. This allows for the client to change his mind on the direction of the features we are creating. This stops us from getting caught up in our own ideas and wasting time.', 29);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 1 "Customer satisfaction through early and continuous software delivery"', 'It\'s only half way through sprint 1 and I am already presenting working features to our client to show him that a good amount of progress is being made.', 29);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 2 "Frequent delivery of working software"', 'We will aim to complete the rest of the features by the end of this sprint. This is so we can present them to our client.', 29);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 6 "Enable face-to-face interactions"', 'Our group has done most of our work in class which helps keep us all on the same page. This communication makes our project move forwards.', 29);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 7 "Working software is the primary measure of progress"', 'Half way through week 1 of our 2 week sprint and we have produced 4 of our 6 designated features. I think that our team is moving at a good pace.', 29);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 10 "Simplicity"', 'Mainly with the database, I have drawn up a reasonable sized database, but I am only implementing it as the client requires it. Allowing us to do only required work.', 29);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'As this week\'s scrum master I have not had to oversee or interfere with the progress of my team members. Their independant working shows that they are confident in what they are doing. They also communicate their progress.<br><br>', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 2 "Working Software Over Comprehensive Documentation"', 'The only documentation we have produced so far is towards the database. Databases need at least one thing documenting their design to help with implementation. Everything else however, is represented by its direct implementation.', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 3 "Customer Collaboration Over Contract Negotiation"', 'This is represented by our inital meeting with our client Grayson. We established a direction and some goals that we wanted to have completed by the end of the sprint and will change to suit the needs of Grayson throughout the development process.', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 4 "Responding to Change Over Following a Plan"', 'Our plan only lasts to the end of this sprint. This allows for the client to change his mind on the direction of the features we are creating. This stops us from getting caught up in our own ideas and wasting time.', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 1 "Customer satisfaction through early and continuous software delivery"', 'It\'s only half way through sprint 1 and I am already presenting working features to our client to show him that a good amount of progress is being made.', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 2 "Frequent delivery of working software"', 'We will aim to complete the rest of the features by the end of this sprint. This is so we can present them to our client.', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'Our group has done most of our work in class which helps keep us all on the same page. This communication makes our project move forwards.', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 7 "Working software is the primary measure of progress"', 'Half way through week 1 of our 2 week sprint and we have produced 4 of our 6 designated features. I think that our team is moving at a good pace.', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 10 "Simplicity"', 'Mainly with the database, I have drawn up a reasonable sized database, but I am only implementing it as the client requires it. Allowing us to do only required work.', 29);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'As this week\'s scrum master I have not had to oversee or interfere with the progress of my team members. Their independant working shows that they are confident in what they are doing. They also communicate their progress.<br><br>', 29);
 
 
 
 
 
-INSERT INTO images (img_path, img_style) VALUES ('./img/week-3/usermigration.PNG', 'width: 650px;');
-INSERT INTO images (img_path, img_style) VALUES ('./img/week-3/loginform.PNG', 'width: 650px;');
-INSERT INTO images (img_path, img_style) VALUES ('./img/week-3/loginusernameemail.PNG', 'width: 650px;');
-INSERT INTO images (img_path, img_style) VALUES ('./img/week-3/regoform.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-4/indexShow.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-4/gameCreation.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-4/routing.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-4/createStore.PNG', 'width: 650px;');
 
 
 
@@ -301,8 +301,10 @@ INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020
 INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 9);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed Game model migration', 'I have completed the migration that creates the game table and its fields. It has a title, description, release date and an image.', 30);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Made progress on Game Controller', 'The game controller has all seven methods that can be implemented. I have implemented the create method which redirects the user to the game creation view.', 30);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added add game creation form', 'I have completed the game creation view which will allow the user to create a game and add it to the application\'s database', 30);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Made progress on Game Controller', 'The game controller has all seven methods that can be implemented. I have implemented the create method which redirects the user to the game creation view.', 30);
+INSERT INTO image_lists (content_id, image_id) VALUES (73, 20);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Added add game creation form', 'I have completed the game creation view which will allow the user to create a game and add it to the application\'s database', 30);
+INSERT INTO image_lists (content_id, image_id) VALUES (74, 21);
 
 
 INSERT INTO sections (title, post_id) VALUES ('What do I want to have completed by the next meeting?', 9);
@@ -322,9 +324,9 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- More w
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 9);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 2 "Frequent delivery of working software"', 'My main focus is to produce this as a working feature by the end of the sprint.', 34);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 6 "Enable face-to-face interactions"', 'We focus on getting the bulk of the work done during class so that we can communicate with eachother and make sure that we are working as a team.', 34);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 10 "Simplicity"', 'The file contains all seven main controller methods. At this point in time we only need four of them and so I am only implementing those four methods.', 34);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 2 "Frequent delivery of working software"', 'My main focus is to produce this as a working feature by the end of the sprint.', 34);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'We focus on getting the bulk of the work done during class so that we can communicate with eachother and make sure that we are working as a team.', 34);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 10 "Simplicity"', 'The file contains all seven main controller methods. At this point in time we only need four of them and so I am only implementing those four methods.<br><br>', 34);
 
 
 
@@ -334,7 +336,9 @@ INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020
 INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 10);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed Game model migration', 'I have completed the migration that creates the game table and its fields. It has a title, description, release date and an image.', 35);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed Game model migration', '', 35);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Game controller routing', 'I have set up all of the routes that we need for the game controller.', 35);
+INSERT INTO image_lists (content_id, image_id) VALUES (82, 22);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed game creation form', 'I have designed and created the game creation form to the specifications of our client.', 35);
 
 
 INSERT INTO sections (title, post_id) VALUES ('What do I want to have completed by the next meeting?', 10);
@@ -356,10 +360,28 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Had ou
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 10);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 1 "Customer satisfaction through early and continuous software delivery"', 'I successfully completed the add game feature so that I had something to show our client.', 39);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 3 "Frequent delivery of working software"', 'This is the 7th feature that I have implemented, showing the client that progress is being made frequently.', 39);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 5 "Support, trust, and motivate the people involved"', 'The SCRUM meeting that I made our team have helps everyone to stay motivated and feel accountable for their progress. This helps our team to also help eachother.', 39);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 6 "Enable face-to-face interactions"', 'More work during class enables us to talk to eachother in person which is the strongest way our team can communicate.', 39);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 7 "Working software is the primary measure of progress"', 'All of the features including the latest one, add game, are fully functional.', 39);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 10 "Simplicity"', 'I have not yet started the implementation of the highscores as at this point they are not necessary.', 39);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Principle 12 "Regular reflections on how to become more effective"', 'This portfolio is a reflection of my work and helps me to see where I can improve.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 1 "Customer satisfaction through early and continuous software delivery"', 'I successfully completed the add game feature so that I had something to show our client.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 3 "Frequent delivery of working software"', 'This is the 7th feature that I have implemented, showing the client that progress is being made frequently.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 5 "Support, trust, and motivate the people involved"', 'The SCRUM meeting that I made our team have helps everyone to stay motivated and feel accountable for their progress. This helps our team to also help eachother.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'More work during class enables us to talk to eachother in person which is the strongest way our team can communicate.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 7 "Working software is the primary measure of progress"', 'All of the features including the latest one, add game, are fully functional.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 10 "Simplicity"', 'I have not yet started the implementation of the highscores as at this point they are not necessary.', 39);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 12 "Regular reflections on how to become more effective"', 'This portfolio is a reflection of my work and helps me to see where I can improve.<br><br>', 39);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Study', FALSE, '2020-08-12', 4);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you been doing outside of class?', 11);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Completed game controller', 'Outside of class I have completed the controller methods that allow me to create and store a new game in the database.', 40);
+INSERT INTO image_lists (content_id, image_id) VALUES (96, 23);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added image picker functionality', 'After implementing the game creation feature, I decided to allow the user to pick an image using a file picker so that they wouldn\'t have to follow an unusual path setting scheme. This reduces user error and makes the application more user friendly.', 40);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added missing image resource', 'When the application can\'t find the image that it needs, it loads the default missing image image.', 40);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 11);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 7 "Working software is the primary measure of progress"', 'I just completed the game controller which will allow me to move forward into client review.', 41);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I managed to complete this feature outside of class showing that I can work independantly and organise myself. This ability helps my team to be more effective and efficient.<br><br>', 41);
