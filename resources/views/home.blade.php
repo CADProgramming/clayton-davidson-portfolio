@@ -4,12 +4,18 @@
     <div class="main-container">
             <div class="sub-container">
                 <h1>Home</h1>
-                <div>
-                    <section class="during-class">
-                        <h2>Student Information</h2>
-                        <div class="session-divider">
-                            <h2 class="section-header">Class 1 (21st of July)</h2>
-                            <div></div>
+                <section class="during-class">
+                    <div class="session-divider">
+                        <h2 class="section-header">Student Information</h2>
+                        <div>
+                            <h3>Name: </h3>
+                            <p>Clayton Davidson</p>
+                            <h3>Student ID: </h3>
+                            <p>1000061387</p>
+                            <h3>Student Code: </h3>
+                            <p>davica3</p>
+                            <h3>Github account: </h3>
+                            <p>CADProgramming</p>
                         </div>
                     </div>
                 </section>

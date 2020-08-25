@@ -385,3 +385,56 @@ INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 7 "Working software is the primary measure of progress"', 'I just completed the game controller which will allow me to move forward into client review.', 41);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I managed to complete this feature outside of class showing that I can work independantly and organise myself. This ability helps my team to be more effective and efficient.<br><br>', 41);
+
+
+
+
+
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/', 'width: 650px;');
+
+
+
+INSERT INTO weeks  (week_start, week_end) VALUES ('2020-08-17', '2020-08-23');
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020-08-18', 5);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 9);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed Game model migration', 'I have completed the migration that creates the game table and its fields. It has a title, description, release date and an image.', 30);
+
+'- Highscore implementation', 'I have been working on implementing the highscores by creating the migration, the controller, and the creation form UI. I have managed to complete all of these.'
+
+'What do I want to have completed by the next meeting?'
+
+'- Search algorithm', 'By the next meeting I want to have completed a search algorithm and have it implemented into our website using a UI at the top of the games index page. This seach engine will allow the user to search for a phrase without it having to be an exact match. This will allow for user error and still produce fairly accurate results.'
+
+'What is getting in my way?'
+
+'- Team organisation', 'Since the beginning of the project our team has really struggled to meet outside of class. This has made communication more difficult and really impedes the progress we make as a group outside of class. It also increases the pressure on the SCRUM master as they have less knowledge as to what people in the team are doing.'
+
+'What did you do during class?'
+
+'- Product demonstration', 'Today I demonstrated the working features of our web application to the class and our client. I showed all of the features that we had implemented over the first sprint.'
+'- Client review', 'We met with our client and discussed what we wanted to implement in the application over the next sprint. We decided to implement the highscores, a search algorithim, finish the home page and link all the sites to the database data.'
+'- Fixed login issue from the last sprint', 'I helped the team fix the login issue. The login button is now persistant on the nav bar.'
+'- Planned next sprint', 'I will be responsible for completing the game search bar, game sorting fields, game highscores, the highscore controller and model, and the home page top 5 games.'
+'- Setup branches making sure that master is up to date', 'We decided it would be a good idea to make sure we all started this sprint with all the features and the latest version of every branch. I helped the others to merge the branches into dev then master in preperation for making new branches off of the master branch.'
+
+'How does this relate back to the 12 principles?'
+
+
+'What have you been doing outside of class?'
+
+'- Added highscore migration', 'I completed the highscore migration allowing us to create and store highscores in our database. The highscores are linked to a game and user using two seperate foreign keys.'
+'- Added highscore controller', 'I added the highscore controller which has two main responsibilities. It directs the user to the highscore creation form and after they submit it, it stores the data in the database.'
+'- Added highscore creation form', 'This is the view which contains the highscore creation form. It has a field for value, and a date picker for the '
+'- Added highscore functionality', 'The user can now enter a highscore for a game and the highscore value aswell as its achievement date will be linked to both the game and the logged in user.'
+'- Added search form', 
+'- Added search engine', 
+'- Added sorting filters', 
+'- Retrieve sorted and search results from database and display in form', 
+
+'How does this relate back to the 12 principles?'
