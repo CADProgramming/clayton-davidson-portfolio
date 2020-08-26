@@ -390,7 +390,15 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Princi
 
 
 
-INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/Sprint2.PNG', 'width: 900px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/highscoremigration.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/highscorecontroller.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/highscoreview.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/searchsortform.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/search1.PNG', 'width: 700px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/search2.PNG', 'width: 700px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/sort.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-5/searchsort.PNG', 'width: 650px;');
 
 
 
@@ -401,40 +409,66 @@ INSERT INTO weeks  (week_start, week_end) VALUES ('2020-08-17', '2020-08-23');
 INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020-08-18', 5);
 
 
-INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 9);
+INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 12);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Completed Game model migration', 'I have completed the migration that creates the game table and its fields. It has a title, description, release date and an image.', 30);
-
-'- Highscore implementation', 'I have been working on implementing the highscores by creating the migration, the controller, and the creation form UI. I have managed to complete all of these.'
-
-'What do I want to have completed by the next meeting?'
-
-'- Search algorithm', 'By the next meeting I want to have completed a search algorithm and have it implemented into our website using a UI at the top of the games index page. This seach engine will allow the user to search for a phrase without it having to be an exact match. This will allow for user error and still produce fairly accurate results.'
-
-'What is getting in my way?'
-
-'- Team organisation', 'Since the beginning of the project our team has really struggled to meet outside of class. This has made communication more difficult and really impedes the progress we make as a group outside of class. It also increases the pressure on the SCRUM master as they have less knowledge as to what people in the team are doing.'
-
-'What did you do during class?'
-
-'- Product demonstration', 'Today I demonstrated the working features of our web application to the class and our client. I showed all of the features that we had implemented over the first sprint.'
-'- Client review', 'We met with our client and discussed what we wanted to implement in the application over the next sprint. We decided to implement the highscores, a search algorithim, finish the home page and link all the sites to the database data.'
-'- Fixed login issue from the last sprint', 'I helped the team fix the login issue. The login button is now persistant on the nav bar.'
-'- Planned next sprint', 'I will be responsible for completing the game search bar, game sorting fields, game highscores, the highscore controller and model, and the home page top 5 games.'
-'- Setup branches making sure that master is up to date', 'We decided it would be a good idea to make sure we all started this sprint with all the features and the latest version of every branch. I helped the others to merge the branches into dev then master in preperation for making new branches off of the master branch.'
-
-'How does this relate back to the 12 principles?'
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Highscore implementation', 'I have been working on implementing the highscores by creating the migration, the controller, and the creation form UI. I have managed to complete all of these.', 42);
+INSERT INTO image_lists (content_id, image_id) VALUES (101, 25);
 
 
-'What have you been doing outside of class?'
+INSERT INTO sections (title, post_id) VALUES ('What do I want to have completed by the next meeting?', 12);
 
-'- Added highscore migration', 'I completed the highscore migration allowing us to create and store highscores in our database. The highscores are linked to a game and user using two seperate foreign keys.'
-'- Added highscore controller', 'I added the highscore controller which has two main responsibilities. It directs the user to the highscore creation form and after they submit it, it stores the data in the database.'
-'- Added highscore creation form', 'This is the view which contains the highscore creation form. It has a field for value, and a date picker for the '
-'- Added highscore functionality', 'The user can now enter a highscore for a game and the highscore value aswell as its achievement date will be linked to both the game and the logged in user.'
-'- Added search form', 
-'- Added search engine', 
-'- Added sorting filters', 
-'- Retrieve sorted and search results from database and display in form', 
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Search algorithm', 'By the next meeting I want to have completed a search algorithm and have it implemented into our website using a UI at the top of the games index page. This seach engine will allow the user to search for a phrase without it having to be an exact match. This will allow for user error and still produce fairly accurate results.', 43);
 
-'How does this relate back to the 12 principles?'
+
+INSERT INTO sections (title, post_id) VALUES ('What is getting in my way?', 12);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Team organisation', 'Since the beginning of the project our team has really struggled to meet outside of class. This has made communication more difficult and really impedes the progress we make as a group outside of class. It also increases the pressure on the SCRUM master as they have less knowledge as to what people in the team are doing.', 44);
+INSERT INTO image_lists (content_id, image_id) VALUES (103, 24);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 12);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Product demonstration', 'Today I demonstrated the working features of our web application to the class and our client. I showed all of the features that we had implemented over the first sprint.', 45);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Client review', 'We met with our client and discussed what we wanted to implement in the application over the next sprint. We decided to implement the highscores, a search algorithim, finish the home page and link all the sites to the database data.', 45);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Fixed login issue from the last sprint', 'I helped the team fix the login issue. The login button is now persistant on the nav bar.', 45);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Planned next sprint', 'I will be responsible for completing the game search bar, game sorting fields, game highscores, the highscore controller and model, and the home page top 5 games.', 45);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Setup branches making sure that master is up to date', 'We decided it would be a good idea to make sure we all started this sprint with all the features and the latest version of every branch. I helped the others to merge the branches into dev then master in preperation for making new branches off of the master branch.', 45);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 12);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 3 "Customer Collaboration Over Contract Negotiation"', 'Both the product demonstration and the client review where we went over our next steps, both demonstrate the 3rd value of customer client collaboration. This is really important that we have been constantly communicating with our client; to ensure the direction of our website matches the client\'s direction.', 46);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 1 "Customer satisfaction through early and continuous software delivery"', 'We demonstrated all of our working features to our client which helps the client see that progress is being made. This is very important to do at the end of a sprint, otherwise the client will be skeptible about your team\'s progress.', 46);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 3 "Frequent delivery of working software"', 'I am producing working software at multiple points throughout the sprint, not just at the end.', 46);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'Most of the team\'s work is done during class. This helps us communicate, especially because of our inate ability to not meet up outside of class - this is becoming a fairly serious issue. I however attend the meetings alone ):', 46);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 7 "Working software is the primary measure of progress"', 'We managed to get almost all of the features completed as a team. I managed to complete all of my features and ended up taking on more, which caused me to have to much work and not enough time. This was an oversight in my part. The feature I took on however, will just get done this sprint instead.', 46);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 8 "Agile processes to support a consistent development pace"', 'Now that we have completed one sprint, we have an idea of the groups pace and my pace with regards to the features. We assigned an appropriate amount of features to each person and should be able to complete them all and maintain a pace throughout this next sprint.', 46);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 9 "Attention to technical detail and design enhances agility"', 'Now that I know my team\'s strengths, it made it easier to assign work to everyone; giving it out based on our strengths. This should improve our efficiency and help us to get more work done faster.<br><br>', 46);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Study', FALSE, '2020-08-25', 5);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you been doing outside of class?', 13);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added highscore migration', 'I completed the highscore migration allowing us to create and store highscores in our database. The highscores are linked to a game and user using two seperate foreign keys.', 47);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Added highscore controller', 'I added the highscore controller which has two main responsibilities. It directs the user to the highscore creation form and after they submit it, it stores the data in the database.', 47);
+INSERT INTO image_lists (content_id, image_id) VALUES (117, 26);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Added highscore creation form', 'This is the view which contains the highscore creation form. It has a field for value, and a date picker for the ', 47);
+INSERT INTO image_lists (content_id, image_id) VALUES (118, 27);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added highscore functionality', 'The user can now enter a highscore for a game and the highscore value aswell as its achievement date will be linked to both the game and the logged in user.', 47);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Added search form', 'I have implemented the UI for the create highscore view.', 47);
+INSERT INTO image_lists (content_id, image_id) VALUES (120, 28);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (2, '- Added search engine', 'The search enginge processes the search string, comparing it to all of the game titles in the database. For each title in the database they will be compared to eachother word for word. It does two checks between the sentences, is this word in the sentence, and is it in the correct position. These values get averaged and produce a percentage match. If the word does not match the words are compared letter by letter with the same two checks. For each word or sentence the length is also taken into account. After averaging all of these comparisons, a decimal percentage of 1 is returned and stored. The controller then returns the games after they have been sorted by these numbers highest to lowest.', 47);
+INSERT INTO image_lists (content_id, image_id) VALUES (121, 29);
+INSERT INTO image_lists (content_id, image_id) VALUES (121, 30);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added sorting filters', 'The search box\'s form also has two select boxes which allow the user to order the data by a specific game category, (title, or release date).', 47);
+INSERT INTO image_lists (content_id, image_id) VALUES (122, 31);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Retrieve sorted and search results from database and display in form', 'After the form is submitted the controller computes the queries and successfully returns the data to the games index page. There is also a button to clear the search results if the user just wants to see the default index page.', 47);
+INSERT INTO image_lists (content_id, image_id) VALUES (123, 32);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 13);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I have managed to complete a large quantity of work outside of class, demonstrating my ability to organize myself.<br><br>', 48);
