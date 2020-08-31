@@ -11,7 +11,8 @@
     <header>
         <div class="title-heading">Software Engineering Portfolio</div>
     </header>
-    <nav><a class="{{ Request::path() === '/' ? 'nav-selected' : '' }}" href="/">Home</a><a class="{{ Request::path() === 'weeks/1' ? 'nav-selected' : '' }}" href="/weeks/1">Week 1</a><a class="{{ Request::path() === 'weeks/2' ? 'nav-selected' : '' }}" href="/weeks/2">Week 2</a><a class="{{ Request::path() === 'weeks/3' ? 'nav-selected' : '' }}" href="/weeks/3">Week 3</a><a class="{{ Request::path() === 'weeks/4' ? 'nav-selected' : '' }}" href="/weeks/4">Week 4</a><a class="{{ Request::path() === 'weeks/5' ? 'nav-selected' : '' }}" href="/weeks/5">Week 5</a><a class="{{ Request::path() === 'weeks/6' ? 'nav-selected' : '' }}" href="/weeks/6">Week 6</a></nav>
+    <nav><a class="{{ Request::path() === '/' ? 'nav-selected' : '' }}" href="/">Home</a>@for ($w = 0; $w < $week_count; $w++)<a class="{{ Request::path() === 'weeks/'.($w + 1) ? 'nav-selected' : '' }}" href="/weeks/{{ $w + 1 }}">Week {{ $w + 1 }}</a>@endfor
+    </nav>
     @yield ('content')
     <footer>
         <div>CADProgramming Clayton_Davidson Davica3 1000061387</div>

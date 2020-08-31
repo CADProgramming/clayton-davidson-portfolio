@@ -472,3 +472,73 @@ INSERT INTO image_lists (content_id, image_id) VALUES (123, 32);
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 13);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I have managed to complete a large quantity of work outside of class, demonstrating my ability to organize myself.<br><br>', 48);
+
+
+
+
+
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-6/homequery.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-6/homepage.PNG', 'width: 650px;');
+
+
+
+INSERT INTO weeks  (week_start, week_end) VALUES ('2020-08-24', '2020-08-30');
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020-08-25', 6);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed during class', 14);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I had a SCRUM with my meeting', 'We caught up with eachother on our team\'s progress. This helps the team work without people doing the same work twice.', 49);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I updated the team on the code I have done last week', 'Over the first week of the sprint I did a large amount of code. I completed the search and highscore functionality. I also made some significant changes to the routing of our application and the folder structure for the views. I did this so that our routes make more sense and conform to the conventions used in the Laracasts tutorials that we all watched.', 49);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Merged all of my branches', 'After showing the other team members the code that I did outside of class, and after showing the client the new features, I merged all of the branches that I had made pull requests for. ', 49);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by the next class?', 14);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Started the top 5 query', 'I want to construct an SQL query that will count all of the highscores and rank the games in that order.', 50);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 14);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'Due to the fact that I was in class, I was able to walk my team members through the changes that I have made to things they use like routing and file storage locations.<br><br>', 51);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020-08-28', 6);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 15);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Constructed the query in sql', 'I managed to construct a query in SQL that will retrieve the top 5 games after ranking them by their highscore counts.', 52);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What is getting in your way?', 15);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Converting sql into eloquent', 'I have made the query work in SQL, but there is no direct conversion between eloquent and SQL. There are things in SQL that cannot be reproduced in eloquent. Hopefully I will be able to construct the query without much modification.', 53);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by the next class?', 15);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- The top 5 games feature', 'I want to have completely implemented the top 5 games feature by the next class, which will be the end of this sprint.<br><br>', 54);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Study', FALSE, '2020-08-29', 6);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed outside of class?', 16);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Finished fetching all fields for each game and sent data to the view', 'I managed to rank the games by their highscore count, but after completing this last class I realised that I can\'t join this table of a game id and a highscore count onto itself, because I have used the group by clause. I managed to loop through the top 5 games and fetch their id from the table in a seperate array to return that instead. Now the view has access to all of the information about each of the top 5 games.', 55);
+INSERT INTO image_lists (content_id, image_id) VALUES (133, 33);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Implemented the data into the view', 'I used the blade formatting tags to implement the rank, title, highscore count, and image into the home page to complete the top 5 games feature.', 55);
+INSERT INTO image_lists (content_id, image_id) VALUES (134, 34);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Button routing from the home page to the individual game page', 'After completing the feature I connected the buttons from the home page to the game displayed, to complete this portion of the home page completely.', 55);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 16);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 3 "Frequent delivery of working software"', 'I have completed all three of my features for this sprint.', 56);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 7 "Working software is the primary measure of progress"', 'We now have a completely working section of the home page which I think is a significant milestone.<br><br>', 56);
