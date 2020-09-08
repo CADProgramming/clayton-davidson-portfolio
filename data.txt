@@ -23,27 +23,27 @@ INSERT INTO sections (title, post_id) VALUES ('What did you do in the last 30 mi
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Looked for a more inspirational team name (Piet)', 'I wan\'t particulary happy with our team name of Bash simply because I don\'t like Bash. The other members of our team didn\'t seem to mind changing the team name. I looked into some programming language names and chose Piet, a bitmap based programming language. I suggested the name to the team and they agreed that it would work.', 1);
 INSERT INTO image_lists (content_id, image_id) VALUES (1, 1);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (2, '- Started looking at Laravel tutorials', 'Laravel is a PHP framework that is used for developing a web applications. We are responsible for teaching ourselves how to use Laravel and to make sure we are familiar with it so that we can use it for our project sprints. I spent some of the remaining time watching the first couple of videos.', 1);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (2, '- Started looking at Laravel tutorials', 'Laravel is a PHP framework that is used for developing a web applications. We are responsible for teaching ourselves how to use Laravel and to make sure we are familiar with it so that we can use it for our project sprints. This is why I spent some of the remaining time watching the first couple of videos.', 1);
 INSERT INTO image_lists (content_id, image_id) VALUES (2, 2);
 INSERT INTO image_lists (content_id, image_id) VALUES (2, 3);
 
 
 INSERT INTO sections (title, post_id) VALUES ('What did you learn from this session?', 1);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- How to jump into a team (flexibility)', 'We were not allowed to choose our team members and so this forced me to interact with people that I am less familiar with and work with them in a team challenge.', 2);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Helping decide on the approach our group would take towards the research task (12 principles and 4 values)', 'I simply suggested that we should split the work load into 3 segments so that we could find the definitions much faster. This ended up working out really well because when we had finished we told eachother what we had learnt and gathered a good understanding of the researched material.', 2);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (2, '- Learning about effective ways to produce software in the real world industry', 'Learning about the 12 main principles and 4 major values of software engineering helped me get a better idea of how to produce software more effectivley and gave me insight on the importance of developer/client communications when developing software.', 2);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- How to jump into a team (flexibility)', 'We were not allowed to choose our team members and so this forced me to interact with people that I am less familiar with and work with them in a team challenge. I was okay with working with people I haven\'t worked with before because I thought it would help me prepare to work in an industry situation where you often work with new people.', 2);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Helping decide on the approach our group would take towards the research task (12 principles and 4 values)', 'I simply suggested that we should split the work load into 3 segments so that we could find the definitions much faster. This ended up working out really well because when we had finished we told eachother what we had learnt and gathered a good understanding of the researched material. I decided to give our team a direction because I felt like I needed to do something or we wouldn\'t be very effective.', 2);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (2, '- Learning about effective ways to produce software in the real world industry', 'Learning about the 12 main principles and 4 major values of software engineering helped me get a better idea of how to produce software more effectivley and gave me insight on the importance of developer/client communications when developing software. I learnt this because it will help me to improve my software development practice in a real world scenario where I will be working for an actual client.', 2);
 INSERT INTO image_lists (content_id, image_id) VALUES (5, 4);
 INSERT INTO image_lists (content_id, image_id) VALUES (5, 5);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Getting to know the team members', 'Today I met Ian, one of our team members and got an initial idea of how our team members work. Learning about your team members and how they process their work load, especially when they are in a team environmnent, is valuable information.', 2);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Basic background into laravel and how it communicates with servers to retrieve web applications', 'Today I had my first look at PHP and Laravel. I managed to figure out how to use Laragon to create a Laravel application thanks to some help from Faisal. I learnt about the general concepts of how PHP works in the background with regards to Laravel web applications.', 2);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Getting to know the team members', 'Today I met Ian, one of our team members and got an initial idea of how our team members work. Learning about your team members and how they process their work load, especially when they are in a team environmnent, is valuable information. I wanted to make an effort to get to know Ian so that I can see how he works and that will help me to understand our team\'s functionality.', 2);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Basic background into laravel and how it communicates with servers to retrieve web applications', 'Today I had my first look at PHP and Laravel. I managed to figure out how to use Laragon to create a Laravel application thanks to some help from Faisal. I learnt about the general concepts of how PHP works in the background with regards to Laravel web applications. I am doing these tutorials so that when the project sprints start I will have a rough enough understanding of laravel to get work done.', 2);
 INSERT INTO image_lists (content_id, image_id) VALUES (7, 6);
 
 
 INSERT INTO sections (title, post_id) VALUES ('How Does this relate back to the 12 principles?', 1);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 5 "Support, trust, and motivate the people involved"', 'I believe that I helped to motivate the team during the research task by giving our team a direction as to how we were going to find the information. This helped our team to be more effective and produce a good size response in a short period of time.', 3);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'Obviously we were in the same room and in the same area as eachother, enabling face to face communication.', 3);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'Obviously we were in the same room and in the same area as eachother, enabling face to face communication. This was very important at these early stages as it helps us to get to know eachother, learning about eachother\'s strengths and work practices.', 3);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'Once I had decided on the direction, every member of our team, including myself, was able to independantly source the information we had allocated for eachother. I didn\'t have to worry about anyone else\'s progress, creating a bit of trust between me and the team members. It also demonstrated each team member\'s motivation and ability to research.', 3);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 12 "Regular reflections on how to become more effective"', 'This reflection in my portfolio will help me to improve my ability both as a team member and as a software developer.<br><br>', 3);
 
@@ -54,13 +54,13 @@ INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020
 
 INSERT INTO sections (title, post_id) VALUES ('What did you do during this class?', 2);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (2, '- Set up the repository', 'I created our team repository and will be the main person responsible for managing it. I created the first three sprints as projects in the projects tab. I then added a default Laravel project to the repository so that we can begin to create our CRUD application.', 4);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (2, '- Set up the repository', 'I created our team repository and will be the main person responsible for managing it. I created the first three sprints as projects in the projects tab. I then added a default Laravel project to the repository so that we can begin to create our CRUD application. This setup will allow us to produce all of our work simultaneously in one place.', 4);
 INSERT INTO image_lists (content_id, image_id) VALUES (12, 7);
 INSERT INTO image_lists (content_id, image_id) VALUES (12, 8);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Made sure the members of our team were progressing through some sort of Laravel tutorial', 'I had progressed through quite a few of the Laracasts tutorials and decided to give a brief explanation of the process of retrieving information from the route, passing that information to the controller, requesting information from the model, then returning that information back to the view.', 4);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Made sure the members of our team were progressing through some sort of Laravel tutorial', 'I had progressed through quite a few of the Laracasts tutorials and decided to give a brief explanation of the process of retrieving information from the route, passing that information to the controller, requesting information from the model, then returning that information back to the view. I did this because as SCRUM master I felt it was my responsibility to make sure my team had begun some sort of tutorial and that they were beginning to build an understanding of the mcv model and laravel for the upcoming sprints.', 4);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Made progress through the Laracsts tutorials', 'I have gotten to the point in the tutorials where I am connecting an actual database to the view using a controller. I have created a basic table in a database and I\'m just about to connect it using the PostsController class in place of the array that currently is acting as the model.', 4);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Made progress through the Laracsts tutorials', 'I have gotten to the point in the tutorials where I am connecting an actual database to the view using a controller. I have created a basic table in a database and I\'m just about to connect it using the PostsController class in place of the array that currently is acting as the model. I am proud of the progress I have made because I am nearly ready to create our web application.', 4);
 INSERT INTO image_lists (content_id, image_id) VALUES (14, 9);
 
 
@@ -85,7 +85,7 @@ INSERT INTO image_lists (content_id, image_id) VALUES (19, 11);
 
 INSERT INTO sections (title, post_id) VALUES ('How Does this relate back to the 12 principles', 3);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I have independantly progressed through the Laravel tutorials up to episode 9.<br><br>', 7);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I have independantly progressed through the Laravel tutorials up to episode 9. I want to get through these tutorials so that I don\'t let my team down because of a lack of understanding of the course material.<br><br>', 7);
 
 
 
@@ -105,14 +105,14 @@ INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020
 
 INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 4);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Converted my github pages portfolio to a laravel application', 'I decided that instead of repeating HTML on every page, with the additional hassel of creating HTML for every post entry in my portfolio, I would create a Laravel application instead. I have created a layout view that can be repeated for each page and have figured out how to embed basic information in the page using laravel.', 8);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Made more progress through the tutorials', 'I have been learning about how you can call specific methods in controllers, using the show method to display an individual database entry. The tutorials have gone over navigating to different pages using the nav bar, live css styling, and passing information about a post to the url as a wildcard after clicking on its \'a\' tag. This allows us to create an index page for all of the data in the database.', 8);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Converted my github pages portfolio to a laravel application', 'I decided that instead of repeating HTML on every page, with the additional hassel of creating HTML for every post entry in my portfolio, I would create a Laravel application instead. I have created a layout view that can be repeated for each page and have figured out how to embed basic information in the page using laravel. The main reason behind this is to reiterate over the turorials to drill the concepts and things I have learned into my memory.', 8);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Made more progress through the tutorials', 'I have been learning about how you can call specific methods in controllers, using the show method to display an individual database entry. The tutorials have gone over navigating to different pages using the nav bar, live css styling, and passing information about a post to the url as a wildcard after clicking on its \'a\' tag. This allows us to create an index page for all of the data in the database. This will be important to one of our sprint features.', 8);
 
 
 INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by next meeting?', 4);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Finish Week 1 of my portfolio', 'I would like to have week 1 completely finished because that would allow me to use week 1 as a template for all other weeks, meaning that I can just insert data into the database and it will append to my portfolio automatically.', 9);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Make significant progress through the laravel tutorials on Laracasts', 'I would like to be up to the form creation tutorials so that I can understand how to create a CRUD app in laravel. This knowledge will be crucial to next week.', 9);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Make significant progress through the laravel tutorials on Laracasts', 'I would like to be up to the form creation tutorials so that I can understand how to create a CRUD app in laravel. This knowledge will be crucial to next week because the user of the web application will want to add, view, edit and remove data.', 9);
 
 
 INSERT INTO sections (title, post_id) VALUES ('What is getting in your way?', 4);
@@ -123,8 +123,8 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Text i
 
 INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 4);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Tried to connect my laravel application to mariadb', 'I spent most of this class trying to connect my laravel application to mariadb. Due to the lack of online resources, I was unable to figure out a solution. I will wait until Grayson has found a solution, to connect my database to mariadb.', 11);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Introduction to SCRUM', 'I had my first SCRUM meeting with our team where we went over the three questions shown in this portfolio class post. I gave the team a report of my progress and what was stopping me from progressing. This was a good practice of the meetings we will have during the sprints.', 11);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Tried to connect my laravel application to mariadb', 'I spent most of this class trying to connect my laravel application to mariadb. Due to the lack of online resources, I was unable to figure out a solution. I will wait until Grayson has found a solution, to connect my database to mariadb to avoid me wasting any more time.', 11);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Introduction to SCRUM', 'I had my first SCRUM meeting with our team where we went over the three questions shown in this portfolio class post. I gave the team a report of my progress and what was stopping me from progressing. This was a good practice of the meetings we will have during the sprints which are essential for communication.', 11);
 
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 4);
@@ -167,7 +167,7 @@ INSERT INTO image_lists (content_id, image_id) VALUES (40, 13);
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 5);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions', 'Because we were doing work during class, it allowed us to be in the same location. This made me able to communicate easily with my team members.', 17);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions', 'Because we were doing work during class, it allowed us to be in the same location. This made me able to communicate easily with my team members. This made it very easy to communicate which issues we were adding to github so that duplicate work didn\'t occur.', 17);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'I am independantly learning laravel using the Laracasts tutorial platform. By independantly learning this programming framework I will be ready to start the project sprints next week.<br><br>', 17);
 
 
@@ -223,14 +223,14 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- We nee
 
 INSERT INTO sections (title, post_id) VALUES ('What did you do during class?', 7);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Chose the most important features to be added to our website', 'I went through the different user stories deciding their priority and which ones were more essential to our application and its useability.', 23);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Chose the most important features to be added to our website', 'I went through the different user stories deciding their priority and which ones were more essential to our application and its useability. This means that we get important features done before unimportant features.', 23);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Allocated features to people', 'After deciding the user stories priority levels, we gave out a couple features to each member of the team to be worked on over the coming sprint.', 23);
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Set up branches', 'Each member of the team including myself set up a branch for each feature. We will merge all of the branches into the master, hopefully by the end of this sprint.', 23);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, 'Set up branches', 'Each member of the team including myself set up a branch for each feature. We will merge all of the branches into the master, hopefully by the end of this sprint. By having these seperate branches it should reduce conflicts that would normally occur between our files as we are working on them.', 23);
 
 
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 7);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 2 "Working Software Over Comprehensive Documentation"', 'The only documentation we have produced so far is towards the database. Databases need at least one thing documenting their design to help with implementation. Everything else however, is represented by its direct implementation.', 24);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 2 "Working Software Over Comprehensive Documentation"', 'The only documentation we have produced so far is towards the database. Databases need at least one thing documenting their design to help with implementation. Everything else however, is represented by its direct implementation. By doing this it allows us to be more flexible and saves us time.', 24);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Value 4 "Responding to Change Over Following a Plan"', 'Our plan only lasts to the end of this sprint. This allows for the client to change his mind on the direction of the features we are creating. This stops us from getting caught up in our own ideas and wasting time.', 24);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'Our group has done most of our work in class which helps keep us all on the same page. This communication makes our project move forwards.', 24);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 10 "Simplicity"', 'Mainly with the database, I have drawn up a reasonable sized database, but I am only implementing it as the client requires it. Allowing us to do only required work.', 24);
@@ -244,7 +244,7 @@ INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020
 
 INSERT INTO sections (title, post_id) VALUES ('What have you completed since we last met?', 8);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (2, 'Completed database setup and registration', 'I have completed the database setup, the registration page, and the login page where the user can login with their username or email', 25);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (2, 'Completed database setup and registration', 'I have completed the database setup, the registration page, and the login page where the user can login with their username or email.', 25);
 INSERT INTO image_lists (content_id, image_id) VALUES (59, 14);
 INSERT INTO image_lists (content_id, image_id) VALUES (59, 15);
 INSERT INTO image_lists (content_id, image_id) VALUES (59, 16);
@@ -489,7 +489,7 @@ INSERT INTO weeks  (week_start, week_end) VALUES ('2020-08-24', '2020-08-30');
 INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020-08-25', 6);
 
 
-INSERT INTO sections (title, post_id) VALUES ('What have you completed during class', 14);
+INSERT INTO sections (title, post_id) VALUES ('What have you completed during class?', 14);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I had a SCRUM with my meeting', 'We caught up with eachother on our team\'s progress. This helps the team work without people doing the same work twice.', 49);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I updated the team on the code I have done last week', 'Over the first week of the sprint I did a large amount of code. I completed the search and highscore functionality. I also made some significant changes to the routing of our application and the folder structure for the views. I did this so that our routes make more sense and conform to the conventions used in the Laracasts tutorials that we all watched.', 49);
@@ -542,3 +542,32 @@ INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 3 "Frequent delivery of working software"', 'I have completed all three of my features for this sprint.', 56);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 7 "Working software is the primary measure of progress"', 'We now have a completely working section of the home page which I think is a significant milestone.<br><br>', 56);
+
+
+
+
+
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-7/', 'width: 650px;');
+
+
+
+INSERT INTO weeks  (week_start, week_end) VALUES ('2020-08-31', '2020-09-6');
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('This week\'s work', TRUE, '2020-09-01', 7);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed during class?', 14);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I had a SCRUM with my meeting', 'We caught up with eachother on our team\'s progress. This helps the team work without people doing the same work twice.', 49);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by next class?', 14);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I had a SCRUM with my meeting', 'We caught up with eachother on our team\'s progress. This helps the team work without people doing the same work twice.', 49);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the?', 14);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I had a SCRUM with my meeting', 'We caught up with eachother on our team\'s progress. This helps the team work without people doing the same work twice.', 49);
