@@ -547,7 +547,10 @@ INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Princi
 
 
 
-INSERT INTO images (img_path, img_style) VALUES ('./img/week-7/', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-7/usermig.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-7/usermodel.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-7/migration.PNG', 'width: 650px;');
+INSERT INTO images (img_path, img_style) VALUES ('./img/week-7/games.PNG', 'width: 650px;');
 
 
 
@@ -555,19 +558,63 @@ INSERT INTO weeks  (week_start, week_end) VALUES ('2020-08-31', '2020-09-6');
 
 
 
-INSERT INTO posts (title, inclass, date, week_id) VALUES ('This week\'s work', TRUE, '2020-09-01', 7);
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 1', TRUE, '2020-09-01', 7);
 
 
-INSERT INTO sections (title, post_id) VALUES ('What have you completed during class?', 14);
+INSERT INTO sections (title, post_id) VALUES ('What have you completed during class?', 17);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I had a SCRUM with my meeting', 'We caught up with eachother on our team\'s progress. This helps the team work without people doing the same work twice.', 49);
-
-
-INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by next class?', 14);
-
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I had a SCRUM with my meeting', 'We caught up with eachother on our team\'s progress. This helps the team work without people doing the same work twice.', 49);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Merging our branches', 'I merged the branches I had been working on after reviewing them with the client. I also helped my team members merge their branches into the dev branch so that they understood the work that was supposed to be there and didn\'t accidentally delete it. I had to do this because the SCRUM master wasn\'t doing it.', 57);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Planning our next sprint', 'I helped create the issues for our kanban board that we thought that we would need for the features we are working on this sprint.', 57);
 
 
-INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the?', 14);
+INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by next class?', 17);
 
-INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I had a SCRUM with my meeting', 'We caught up with eachother on our team\'s progress. This helps the team work without people doing the same work twice.', 49);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Admin/Default user types', 'I want to have started and nearly completed the feature I was assigned this sprint which was to create the two different user types of admin and default. This makes it so one user type (admin), can have more abilities and privilige than the default user type. This will allow the admin accounts to see options that would be hidden for the regular user.', 58);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 17);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 6 "Enable face-to-face interactions"', 'I think that this is principle is very important for when we merge and catch eachother up on the work we have done so far. At this time communication is extremely important otherwise work can be lost and the integrity of the application can be affected during the merge.', 59);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 8 "Agile processes to support a consistent development pace"', 'I believe that I am maintaining my software development workload and keeping it consistent. However I believe that my current work load for this class is too much and so I will aim to do slightly less work over the following weeks. I feel like my team members started out strong, getting a couple of tickets done each sprint. But now they seem to be doing less and less work each week and we are beginning to see some real communication issues.<br><br>', 59);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Class 2', TRUE, '2020-09-04', 7);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed during class?', 18);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Showcased our project', 'Ian and I showcased our project to the other class members as Taylor was absent without excuse.', 60);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Reflection on our work ethic', 'I filled out a sheet and did some reflection questions that helped me to reflect on my work ethic and how I have been progressing. This demonstrates the 12th principle of agile software development.', 60);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What do you want to have completed by next class?', 18);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added real game data', 'I want to remove all of the random filler data from our database and replace it with more realisitic data for presentation purposes. It will also help us do the css for the images properly.', 61);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Tweaking migrations', 'I want to edit the tables in our database to link the user to all of the games and highscores they create. At the moment the user is only linked to the highscores they create but they need to be linked to the highscores and games.', 61);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 18);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 9 "Attention to technical detail and design enhances agility"', 'The design of the database is crucial to the functionality of the website. I made an initial plan for the database and will tweak this plan to match the requirements. By getting the technical details of the database correct it will allow the database to maintain its integrity over the duration of the useage of the website.', 62);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 10 "Simplicity"', 'By constructing the most minimal database possible, now that change is required it will be easy to implement because the relationships in the database are still very basic.<br><br>', 62);
+
+
+
+INSERT INTO posts (title, inclass, date, week_id) VALUES ('Study', FALSE, '2020-09-03', 7);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What have you completed oustide of class?', 19);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Admin/user account intergration', 'I have added a type column to our users table. All users by default will have a type of default but the users we create manually can be set to admin. Only the admin users and users who own the games/highscores in the system will be able to view and use the edit/delete features.', 63);
+INSERT INTO image_lists (content_id, image_id) VALUES (149, 35);
+INSERT INTO image_lists (content_id, image_id) VALUES (149, 36);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Refactoring migrations', 'I have changed the migrations to support a primary key/foreign key relationship between the creator of a game and the game created. This will allow us to make it so only users who own games can edit or delete them.', 63);
+INSERT INTO image_lists (content_id, image_id) VALUES (150, 37);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (1, '- Filling database with more serious data', 'I found and added 10 different games to our database so that we have some more realistic data to display and handle. This will allow us to refine the css to handle the actual images that we will be using. This is also important as it gives the client a real good idea of how the website will look when their data is stored in the system.', 63);
+INSERT INTO image_lists (content_id, image_id) VALUES (151, 38);
+
+
+INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 19);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'This work that I have been producing outside of class is a good example of principle 11, showing that I can manage myself and my work load independantly. This helps me to be an effective part of my team.<br><br>', 64);
