@@ -18,11 +18,13 @@ class WeekController extends Controller
         {
             abort(404);
         }
-        
+
         $post_data = DB::table('posts')
             ->select('posts.*')
-            ->where('posts.week_id', '=', $week_number)
-            ->get();
+            ->where([
+                ['posts.week_id', '=', $week_number],
+                ['posts.sprint', '=', 0],
+            ])->get();
 
         $section_data = [];
         $content_data = [];
@@ -61,8 +63,40 @@ class WeekController extends Controller
         ]);
     }
 
-    public function index()
+    function reflect($sprint_number)
     {
-        return view('home');
+        $week_number = (2 * $sprint_number) + 1;
+
+        $post_data = DB::table('posts')
+            ->select('posts.*')
+            ->where([
+                ['posts.week_id', '=', $week_number],
+                ['posts.sprint', '=', 1],
+            ])->get();
+
+        $section_data = [];
+        $content_data = [];
+
+        $section_data[] = DB::table('sections')
+            ->select('sections.*')
+            ->where('sections.post_id', '=', $post_data[0]->id)
+            ->get();
+
+        for ($s = 0; $s < count($section_data[0]); $s++) {
+            $content_data[0][] = DB::table('contents')
+                ->join('sections', 'contents.section_id', '=', 'sections.id')
+                ->select('contents.*')
+                ->where([
+                    ['sections.post_id', '=', $post_data[0]->id],
+                    ['contents.section_id', '=', $section_data[0][$s]->id],
+                ])->get();
+        }
+
+        return view('sprint', [
+            'post_data' => $post_data,
+            'section_data' => $section_data,
+            'content_data' => $content_data,
+            'sprint_number' => $sprint_number,
+        ]);
     }
 }

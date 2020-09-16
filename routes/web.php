@@ -17,6 +17,5 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/weeks', 'WeekController@index');
-
 Route::get('/weeks/{week_number}', 'WeekController@show');
+Route::get('/sprint/{sprint_number}', 'WeekController@reflect');

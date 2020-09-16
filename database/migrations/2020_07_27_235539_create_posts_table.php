@@ -17,6 +17,7 @@ class CreatePostsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->boolean('inclass')->default(true);
+            $table->boolean('sprint')->default(false);
             $table->timestamp('date')->nullable();
             $table->timestamps();
             $table->foreignId('week_id')->constrained('weeks');

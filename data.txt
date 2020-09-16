@@ -618,3 +618,40 @@ INSERT INTO image_lists (content_id, image_id) VALUES (151, 38);
 INSERT INTO sections (title, post_id) VALUES ('How does this relate back to the 12 principles?', 19);
 
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'This work that I have been producing outside of class is a good example of principle 11, showing that I can manage myself and my work load independantly. This helps me to be an effective part of my team.<br><br>', 64);
+
+
+
+
+
+INSERT INTO posts (title, inclass, sprint, date, week_id) VALUES ('Personal Sprint Reflection', FALSE, TRUE, '2020-01-01', 3);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do well?', 20);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Contributed a lot of work towards the setting up of the website', 'I managed to set up the most important parts of the website. I completed the first steps toward building our database. I added the ability to both register and login an account using the website. Added games to the database, allowing the user to create games. To add this functionality I implemented routing to the different pages and setup the controller class for the Game model.', 65);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Got all of my tickets done except for one', 'Because of my work ethic, I managed to complete all of my assigned tickets. The reason I have one left is because I took on two additional tickets during the last week of the sprint and unfortunately didn\'t manage to complete the second one.', 65);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Communicated with my team members', 'Using Microsoft Teams and general communication during class (SCRUM meetings), I was able to communicate effectively with my team members. This allowed me to keep track of everyone\'s progress throughout the sprint.', 65);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Showed up to the team meetings', 'Even though both of my team members bailed on the team meeting, I managed to turn up and get work done on our project and my portfolio.', 65);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Merged early and informed team members of changes', 'I merged my changes before the end of the sprint which allowed us to tidy up the work making sure that it was all properly connected with routes. Before merging I also managed to inform my team members of the changes that I was about to implement into the master branch.', 65);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What could you have done better?', 20);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Make sure I check in with team members a bit more', 'I communicated with the team members a couple of times outside of class, but I feel personally I could have communicated with them more frequently.', 66);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Not over allocating work', 'Next sprint I will aim to not take on more tickets than I can complete in the allocated two weeks. This will mean that all of the features I add will be completely implemented and we will have no half way features.', 66);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Setup a dev branch', 'Currently we have been merging from our feature branches directly into the master branch. This is really bad practice and it means we have all of these random commits in the master branch. Next sprint we will use a dev branch and make sure everything is fully functional before we implement it into the master branch.', 66);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- More informitive commit messages', 'My commit messages have been okay, but I feel personally that they should be more frequent and more informative, especially in this group context.', 66);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What lessons did you learn?', 20);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Not to \'bite more than you can chew\'', 'I shouldn\'t have taken on both of those extra tickets. This is just a case of learning how much work I can get done in a small time frame. Once I know my capabilities, this won\'t be a reoccuring problem.', 67);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Team members will get more done when followed up on', 'I think that my team members would have been more effective if I as SCRUM master spent more time following up on what they are doing. This would give them a sense of accountability for their work and would encourage them to have work done.', 67);    
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Insentive and morale is important in teams', 'We have decided to have pizza during our team meetings both as an incentive to show up and as a boost for morale because we can say \'Hey we\'re the only team that gets pizza, how cool is that.\'', 67);    
+
+
+INSERT INTO sections (title, post_id) VALUES ('What barriers did you encounter?', 20);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Team members didn\'t show up to team meeting', 'I showed up to the team meeting and found that none of my other team members showed up. This is really bad for communication because it made it far more difficult for me to know what they were doing and how much work they had done.', 68);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Team members missing class', 'Occasionally my team members miss class. This adds to our already present communication problem that is starting to develop. This is why I felt that I should have reached out more, due to my team members being absent from class and from the team meeting.', 68);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Some styling conflicts', 'Small issue really. We didn\'t really establish what sort of css styling system we were going to use and had quite a bit of mix and conflict between the scss, css, and bootstrap stylesheets. We should have established what systems we were going to use before we started working.<br><br>', 68);

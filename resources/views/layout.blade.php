@@ -11,7 +11,27 @@
     <header>
         <div class="title-heading">Software Engineering Portfolio</div>
     </header>
-    <nav><a class="{{ Request::path() === '/' ? 'nav-selected' : '' }}" href="/">Home</a>@for ($w = 0; $w < $week_count; $w++)<a class="{{ Request::path() === 'weeks/'.($w + 1) ? 'nav-selected' : '' }}" href="/weeks/{{ $w + 1 }}">Week {{ $w + 1 }}</a>@endfor
+    <nav class="drop-nav">
+        <a href="/">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Tutorials</a>
+            <div class="dropdown-content">
+                @for ($w = 1; $w < $week_count && $w <= 2; $w++)
+                    <a href="/weeks/{{ $w }}">Week {{ $w }}</a>
+                @endfor
+            </div>
+        </div>
+        @for ($s = 1; $s <= round(($week_count - 2) / 2); $s++)
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Sprint {{ $s }}</a>
+                <div class="dropdown-content">
+                    @for ($w = ($s * 2) + 1; $w <= $week_count && $w <= ($s * 2) + 2; $w++)
+                        <a href="/weeks/{{ $w }}">Week {{ $w }}</a>
+                    @endfor
+                    <a href="/sprint/{{ $s }}">Sprint Reflection</a>
+                </div>
+            </div>
+        @endfor
     </nav>
     @yield ('content')
     <footer>
