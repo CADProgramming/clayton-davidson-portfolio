@@ -19,7 +19,7 @@ class CreateContentsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->timestamps();
-            $table->foreignId('section_id')->constrained('sections');
+            $table->bigInteger('section_id')->foreign('section_id')->references('sections')->on('id');
         });
     }
 

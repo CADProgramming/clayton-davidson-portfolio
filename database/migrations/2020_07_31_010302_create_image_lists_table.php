@@ -16,8 +16,8 @@ class CreateImageListsTable extends Migration
         Schema::create('image_lists', function (Blueprint $table) {
             $table->bigInteger('id');
             $table->timestamps();
-            $table->foreignId('content_id')->constrained('contents');
-            $table->foreignId('image_id')->constrained('images');
+            $table->bigInteger('content_id')->foreign('content_id')->references('contents')->on('id');
+            $table->bigInteger('image_id')->foreign('image_id')->references('images')->on('id');
         });
     }
 

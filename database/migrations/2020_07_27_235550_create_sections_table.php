@@ -17,7 +17,7 @@ class CreateSectionsTable extends Migration
             $table->bigInteger('id');
             $table->string('title');
             $table->timestamps();
-            $table->foreignId('post_id')->constrained('posts');
+            $table->bigInteger('post_id')->foreign('post_id')->references('posts')->on('id');
         });
     }
 
