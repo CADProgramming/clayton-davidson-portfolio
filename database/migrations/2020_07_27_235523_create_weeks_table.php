@@ -14,7 +14,7 @@ class CreateWeeksTable extends Migration
     public function up()
     {
         Schema::create('weeks', function (Blueprint $table) {
-            $table->bigInteger('id');
+            $table->unsignedBigInteger('id');
             $table->timestamp('week_start')->nullable();
             $table->timestamp('week_end')->nullable();
             $table->timestamps();

@@ -683,4 +683,39 @@ INSERT INTO contents (id, image_count, title, body, section_id) VALUES (172, 0, 
 INSERT INTO sections (id, title, post_id) VALUES (72, 'What barriers did you encounter?', 21);
 
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (173, 0, '- Still missing a team meeting', 'After learning the importance of the team meeting I can see why we need at least one a week. The barrier here is that our team still can\'t even do two meetings over two weeks. This level of commitment needs to increase otherwise we could have some serious issues later on.', 72);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (174, 0, '- Not really getting enough work from my team members', 'At this point in time the work from my team members over two weeks is nowhere near close enough. At this point they are doing one webpage worth of html and that is it; over two whole weeks. If I was doing the same amount of work as them we would be three weeks behind the other teams. Instead I do the entire backend and connect the backend to their pages and I STILL have to create pages aswell. The workload is heavily skewed to me and if I do too much of the work I get marked down and if I don\'t do enough of the work then our project sucks and we all loose marks. You can see the difficult position that I am being put in here.<br>', 72);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (174, 0, '- Not really getting enough work from my team members', 'At this point in time the work from my team members over two weeks is nowhere near close enough to the amount of work they should be doing. At this point they are doing one webpage worth of html and that is it; over two whole weeks. If I was doing the same amount of work as them we would be three weeks behind the other teams. Instead I do the entire backend and connect the backend to their pages and I STILL have to create pages aswell. The workload is heavily skewed to me and if I do too much of the work I get marked down and if I don\'t do enough of the work then our project sucks and we all loose marks. You can see the difficult position that I am being put in here.<br>', 72);
+
+
+
+
+
+INSERT INTO posts (id, title, inclass, sprint, date, week_id) VALUES (22, 'Personal Sprint Reflection', FALSE, TRUE, '2020-01-01', 7);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (73, 'What did you do well?', 22);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (168, 0, '- Maintained my workload while supporting others', 'I managed to stay on top of his work load getting all of my tickets done and helped to support our other team member. This was necessary because of outside circumstances and one of the team members absence.', 73);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (168, 0, '- I made attempts to communicate with other team members', 'Even though I was not the SCRUM master this sprint I still made attempts to communicate with our team members. I had to do this because no communication was happening and one of our team members has completely abandoned the group without any communication through emails or Microsoft Teams. Many attempts at getting in touch with our missing team member were made by me and he is still missing. I also kept in touch with the other team member because he was not keeping in touch with me as he was the SCRUM master for this sprint.', 73);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (74, 'What could you have done better?', 22);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (171, 0, 'I think under the circumstances I reacted the best way possible', 'I do not see what I could\'ve done better this sprint', 74);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (75, 'What lessons did you learn?', 22);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (172, 0, '- The difficulties of working in teams', 'What I have learnt this sprint is how difficult it is to work with other people, especially people who have very little ability to communicate. The fact that the SCRUM master never communicated with any of the other team members, and the fact that one of our team members is completely gone. The struggle of going from working with two people that do a small amount of work to now having one person who does a little amount of work is putting a large strain on me in this group.', 75);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (172, 0, '- Don\'t just stop communicating', 'I am genuinely concerned about the team member who is missing. He stopped all communication, stopped coming to class and I haven\'t seen him or heard anything from him or his friends in two weeks. Something could be seriously wrong and I have involved the lecturer in hope of finding out if he is okay.', 75);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (76, 'What barriers did you encounter?', 22);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (173, 0, '- Lack of work done by other team member', 'He did one page again (1 easy ticket), while I did five different tickets', 76);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (173, 0, '- SCRUM master failed to be an effective SCRUM master', 'He didn\'t communicate with anyone for two whole weeks. He didn\'t show up to team meetings.', 76);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (173, 0, '- Team member completely gone', 'We were already a small group struggling to get work done. Now we are by far the smallest and least productive group in my stream despite how hard I work or how much work I get done.', 76);
+
+
+
+
+
