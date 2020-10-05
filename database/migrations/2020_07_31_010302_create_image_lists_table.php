@@ -14,7 +14,7 @@ class CreateImageListsTable extends Migration
     public function up()
     {
         Schema::create('image_lists', function (Blueprint $table) {
-            $table->id();
+            $table->bigInteger('id');
             $table->timestamps();
             $table->foreignId('content_id')->constrained('contents');
             $table->foreignId('image_id')->constrained('images');
