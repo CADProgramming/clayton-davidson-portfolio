@@ -655,3 +655,84 @@ INSERT INTO sections (title, post_id) VALUES ('What barriers did you encounter?'
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Team members didn\'t show up to team meeting', 'I showed up to the team meeting and found that none of my other team members showed up. This is really bad for communication because it made it far more difficult for me to know what they were doing and how much work they had done.', 68);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Team members missing class', 'Occasionally my team members miss class. This adds to our already present communication problem that is starting to develop. This is why I felt that I should have reached out more, due to my team members being absent from class and from the team meeting.', 68);
 INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Some styling conflicts', 'Small issue really. We didn\'t really establish what sort of css styling system we were going to use and had quite a bit of mix and conflict between the scss, css, and bootstrap stylesheets. We should have established what systems we were going to use before we started working.<br><br>', 68);
+
+
+
+
+
+INSERT INTO posts (title, inclass, sprint, date, week_id) VALUES ('Personal Sprint Reflection', FALSE, TRUE, '2020-01-01', 5);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do well?', 21);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Added a lot of functionality to the website', 'This sprint I managed to add a large amount of functionality to our website including: Adding highscores to the database (model, table, and controller), Search for a game using a fairly complicated searching algorithim that ranks the games in order of closeness to the search term, Sort the games by a specific field in the index page, Top 5 games on the homepage where the games are ranked based on the amount of highscores each game has.', 69);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Showed up to the team meeting', 'This sprint we had two team meetings. For the first team meeting I was the only one that showed up which seems to be our team\'s normal. The second week we all met for our first team meeting however I don\'t think that we will have anymore team meetings after this one.', 69);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- I decided that we should be using a dev branch', 'I saw that other teams were implementing a dev branch to polish up minor bugs and to use to configure eachother\'s pull requests before putting their websites into their release branch. I saw this as a good practice and decided that we should be doing this aswell. After that I added a dev branch to our repository and talked to my team members about the new practices that we would be using.', 69);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What could you have done better?', 21);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Merged into the dev branch sooner', 'I still need to merge my work into the development branch sooner. At the moment I keep leaving it to the presentation day at the end of the sprint. But that only leaves me with ten minutes to make sure everything works after the merge. If I merge my work into dev sooner it will give me more time to make sure all of our work is working as one website.', 70);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What lessons did you learn?', 21);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Teams work much smoother when the team knows what everyone else is doing', 'By this one team meeting that we had I can see clearly the impact that team meetings have on the team\'s performance as a group. The meeting helps us to work around eachother with regards to software that relys on other software that somebody else is working on. It gives us an idea of the progress everyone is making and it shows the other team members the amount of work I have been getting done and encourages them to work harder and get more stuff done.', 71);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What barriers did you encounter?', 21);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Still missing a team meeting', 'After learning the importance of the team meeting I can see why we need at least one a week. The barrier here is that our team still can\'t even do two meetings over two weeks. This level of commitment needs to increase otherwise we could have some serious issues later on.', 72);
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- Not really getting enough work from my team members', 'At this point in time the work from my team members over two weeks is nowhere near close enough. At this point they are doing one webpage worth of html and that is it; over two whole weeks. If I was doing the same amount of work as them we would be three weeks behind the other teams. Instead I do the entire backend and connect the backend to their pages and I STILL have to create pages aswell. The workload is heavily skewed to me and if I do too much of the work I get marked down and if I don\'t do enough of the work then our project sucks and we all loose marks. You can see the difficult position that I am being put in here.', 72);
+
+
+
+
+
+INSERT INTO posts (title, inclass, sprint, date, week_id) VALUES ('Personal Sprint Reflection', FALSE, TRUE, '2020-01-01', 7);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do well?', 22);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- ', '', 73);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What could you have done better?', 22);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- ', '', 74);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What lessons did you learn?', 22);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- ', '', 75);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What barriers did you encounter?', 22);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- ', '', 72);
+
+
+
+
+
+INSERT INTO posts (title, inclass, sprint, date, week_id) VALUES ('Personal Sprint Reflection', FALSE, TRUE, '2020-01-01', 9);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What did you do well?', 22);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- ', '', 73);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What could you have done better?', 22);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- ', '', 74);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What lessons did you learn?', 22);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- ', '', 75);
+
+
+INSERT INTO sections (title, post_id) VALUES ('What barriers did you encounter?', 22);
+
+INSERT INTO contents (image_count, title, body, section_id) VALUES (0, '- ', '', 72);
