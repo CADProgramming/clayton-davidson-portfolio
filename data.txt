@@ -429,7 +429,7 @@ INSERT INTO image_lists (id, content_id, image_id) VALUES (25, 103, 24);
 INSERT INTO sections (id, title, post_id) VALUES (45, 'What did you do during class?', 12);
 
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (104, 0, '- Product demonstration', 'Today I demonstrated the working features of our web application to the class and our client. I showed all of the features that we had implemented over the first sprint.', 45);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (105, 0, '- Client review', 'We met with our client and discussed what we wanted to implement in the application over the next sprint. We decided to implement the highscores, a search algorithim, finish the home page and link all the sites to the database data.', 45);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (105, 0, '- Client review', 'We met with our client and discussed what we wanted to implement in the application over the next sprint. We decided to implement the highscores, a search algorithm, finish the home page and link all the sites to the database data.', 45);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (106, 0, '- Fixed login issue from the last sprint', 'I helped the team fix the login issue. The login button is now persistant on the nav bar.', 45);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (107, 0, '- Planned next sprint', 'I will be responsible for completing the game search bar, game sorting fields, game highscores, the highscore controller and model, and the home page top 5 games.', 45);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (108, 0, '- Setup branches making sure that master is up to date', 'We decided it would be a good idea to make sure we all started this sprint with all the features and the latest version of every branch. I helped the others to merge the branches into dev then master in preperation for making new branches off of the master branch.', 45);
@@ -665,7 +665,7 @@ INSERT INTO posts (id, title, inclass, sprint, date, week_id) VALUES (21, 'Perso
 
 INSERT INTO sections (id, title, post_id) VALUES (69, 'What did you do well?', 21);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (168, 0, '- Added a lot of functionality to the website', 'This sprint I managed to add a large amount of functionality to our website including: Adding highscores to the database (model, table, and controller), Search for a game using a fairly complicated searching algorithim that ranks the games in order of closeness to the search term, Sort the games by a specific field in the index page, Top 5 games on the homepage where the games are ranked based on the amount of highscores each game has.', 69);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (168, 0, '- Added a lot of functionality to the website', 'This sprint I managed to add a large amount of functionality to our website including: Adding highscores to the database (model, table, and controller), Search for a game using a fairly complicated searching algorithm that ranks the games in order of closeness to the search term, Sort the games by a specific field in the index page, Top 5 games on the homepage where the games are ranked based on the amount of highscores each game has.', 69);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (169, 0, '- Showed up to the team meeting', 'This sprint we had two team meetings. For the first team meeting I was the only one that showed up which seems to be our team\'s normal. The second week we all met for our first team meeting however I don\'t think that we will have anymore team meetings after this one.', 69);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (170, 0, '- I decided that we should be using a dev branch', 'I saw that other teams were implementing a dev branch to polish up minor bugs and to use to configure eachother\'s pull requests before putting their websites into their release branch. I saw this as a good practice and decided that we should be doing this aswell. After that I added a dev branch to our repository and talked to my team members about the new practices that we would be using.', 69);
 
@@ -694,28 +694,95 @@ INSERT INTO posts (id, title, inclass, sprint, date, week_id) VALUES (22, 'Perso
 
 INSERT INTO sections (id, title, post_id) VALUES (73, 'What did you do well?', 22);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (168, 0, '- Maintained my workload while supporting others', 'I managed to stay on top of his work load getting all of my tickets done and helped to support our other team member. This was necessary because of outside circumstances and one of the team members absence.', 73);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (168, 0, '- I made attempts to communicate with other team members', 'Even though I was not the SCRUM master this sprint I still made attempts to communicate with our team members. I had to do this because no communication was happening and one of our team members has completely abandoned the group without any communication through emails or Microsoft Teams. Many attempts at getting in touch with our missing team member were made by me and he is still missing. I also kept in touch with the other team member because he was not keeping in touch with me as he was the SCRUM master for this sprint.', 73);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (175, 0, '- Maintained my workload while supporting others', 'I managed to stay on top of his work load getting all of my tickets done and helped to support our other team member. This was necessary because of outside circumstances and one of the team members absence.', 73);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (176, 0, '- I made attempts to communicate with other team members', 'Even though I was not the SCRUM master this sprint I still made attempts to communicate with our team members. I had to do this because no communication was happening and one of our team members has completely abandoned the group without any communication through emails or Microsoft Teams. Many attempts at getting in touch with our missing team member were made by me and he is still missing. I also kept in touch with the other team member because he was not keeping in touch with me as he was the SCRUM master for this sprint.', 73);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (74, 'What could you have done better?', 22);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (171, 0, 'I think under the circumstances I reacted the best way possible', 'I do not see what I could\'ve done better this sprint', 74);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (177, 0, 'I think under the circumstances I reacted the best way possible', 'I do not see what I could\'ve done better this sprint', 74);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (75, 'What lessons did you learn?', 22);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (172, 0, '- The difficulties of working in teams', 'What I have learnt this sprint is how difficult it is to work with other people, especially people who have very little ability to communicate. The fact that the SCRUM master never communicated with any of the other team members, and the fact that one of our team members is completely gone. The struggle of going from working with two people that do a small amount of work to now having one person who does a little amount of work is putting a large strain on me in this group.', 75);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (172, 0, '- Don\'t just stop communicating', 'I am genuinely concerned about the team member who is missing. He stopped all communication, stopped coming to class and I haven\'t seen him or heard anything from him or his friends in two weeks. Something could be seriously wrong and I have involved the lecturer in hope of finding out if he is okay.', 75);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (178, 0, '- The difficulties of working in teams', 'What I have learnt this sprint is how difficult it is to work with other people, especially people who have very little ability to communicate. The fact that the SCRUM master never communicated with any of the other team members, and the fact that one of our team members is completely gone. The struggle of going from working with two people that do a small amount of work to now having one person who does a little amount of work is putting a large strain on me in this group.', 75);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (179, 0, '- Don\'t just stop communicating', 'I am genuinely concerned about the team member who is missing. He stopped all communication, stopped coming to class and I haven\'t seen him or heard anything from him or his friends in two weeks. Something could be seriously wrong and I have involved the lecturer in hope of finding out if he is okay.', 75);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (76, 'What barriers did you encounter?', 22);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (173, 0, '- Lack of work done by other team member', 'He did one page again (1 easy ticket), while I did five different tickets', 76);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (173, 0, '- SCRUM master failed to be an effective SCRUM master', 'He didn\'t communicate with anyone for two whole weeks. He didn\'t show up to team meetings.', 76);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (173, 0, '- Team member completely gone', 'We were already a small group struggling to get work done. Now we are by far the smallest and least productive group in my stream despite how hard I work or how much work I get done.', 76);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (180, 0, '- Lack of work done by other team member', 'He did one page again (1 easy ticket), while I did five different tickets', 76);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (181, 0, '- SCRUM master failed to be an effective SCRUM master', 'He didn\'t communicate with anyone for two whole weeks. He didn\'t show up to team meetings.', 76);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (182, 0, '- Team member completely gone', 'We were already a small group struggling to get work done. Now we are by far the smallest and least productive group in my stream despite how hard I work or how much work I get done.<br>', 76);
 
 
 
 
 
+INSERT INTO images (id, img_path, img_style) VALUES (39, './img/week-8/profileRoutes.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (40, './img/week-8/profile.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (41, './img/week-8/generate.PNG', 'width: 650px;');
+
+
+
+INSERT INTO weeks (id, week_start, week_end) VALUES (8, '2020-09-7', '2020-09-13');
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (23, 'Class 1', TRUE, '2020-09-01', 8);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (77, 'What have you completed during class?', 23);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (183, 0, '- Portfolio work', 'Today I worked on my portfolio because all members of my team were absent and I needed to show them what I have completed in order to move on. Without this communication they would not be able to use anything that I have worked on because it is completely different to what is already there.', 57);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (78, 'What do you want to have completed by next class?', 23);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (184, 0, '- Highscore and user placeholder data', 'I have been working on generating users and highscores at random for different games. This will fill our database with some reasonable data on a fairly large scale. I would like to have this completed by the next class so that I can work on the homepage till the end of the sprint.', 58);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (79, 'How does this relate back to the 12 principles?', 23);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (185, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'This work that I have been doing despite my team breaking down due to communication problems, shows that I am able to keep myself organised and stay motivated. This allows me to keep producing work at a high standard.<br><br>', 59);
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (24, 'Class 2', TRUE, '2020-09-04', 8);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (80, 'What have you completed during class?', 24);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (186, 0, '- Setup home page data', 'I\'ve added top users to the home page where the top user is the user with the most highscores. It also displays the user\'s highest score. This was the last thing I needed to do to complete the home page.', 60);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (187, 1, '- Setup profile and user profile routes', 'I had to setup two different routes. One route, the /profile route, takes the user to their profile page and displays all of the details about the currently logged in user. The other route, /users/userid route, shows the information about a specific user in the database. I added links to the /users/userid routes to the home page for all the top 5 users.', 60);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (39, 187, 39);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (188, 1, '- Implemented profile data in profile pages', 'For the /profile route I had to user the Auth::user model to integrate the user data into the profile page. For the other routes I used the user controller to bring through a user object from the backend with the correct user id.', 60);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (40, 188, 40);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (81, 'What do you want to have completed by next class?', 24);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (189, 0, '- Merge into dev', 'I have completed all of my tickets for this sprint and the next class is the end of the sprint so I should aim to have all of my branches merged into dev so that I can make sure they are compatible with Taylor\'s work before presenting our progress.', 61);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (82, 'How does this relate back to the 12 principles?', 24);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (190, 0, '- Principle 3 "Frequent delivery of working software"', 'This principle applies because we are doing our project work over set iterations, as two week sprints.', 62);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (191, 0, '- Principle 5 "Support, trust, and motivate the people involved"', 'Throughout this sprint I have been trying to motivate other people and keep everyone communicating even though I am not the SCRUM master for this sprint. I felt the responsibility to do this because our team\'s communication is falling apart and if we stop communicating then our team\'s effectiveness drops significantly.', 62);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (192, 0, '- Principle 6 "Enable face-to-face interactions"', 'We do most of our project work in class which enables us to interact directly with eachother which is the best form of communication especially when our work areas overlap.', 62);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (193, 0, '- Principle 8 "Agile processes to support a consistent development pace"', 'I have been maintaining my development pace of doing 3-4 tickets each sprint. This helps the project to maintain it\'s momentum.<br><br>', 62);
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (25, 'Study', FALSE, '2020-09-03', 8);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (83, 'What have you completed oustide of class?', 25);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (194, 1, '- Generating placeholder data', 'I created a admin part of the program that allows us to pull randomly generated users from an API to populate our database and make it more realistic. The other algorithm I wrote allows us to generate random highscores for random games. Now the website has some randomly generated data that helps us to show the client a realistic expectation of the website while it is in use by the public.', 63);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (41, 194, 41);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (84, 'How does this relate back to the 12 principles?', 25);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (195, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'The fact that I have done this generation of placeholder data outside of class time, shows that I can work by the 11th principle of agile software development, working independantly which helps the team to be more effective.<br><br>', 64);
