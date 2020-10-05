@@ -20,7 +20,8 @@ class CreatePostsTable extends Migration
             $table->boolean('sprint')->default(false);
             $table->timestamp('date')->nullable();
             $table->timestamps();
-            $table->foreignId('week_id')->constrained('weeks');
+            $table->unsignedBigInteger('week_id');
+            $table->foreign('week_id')->references('id')->on('weeks');
         });
     }
 
