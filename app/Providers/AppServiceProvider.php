@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+		Schema::defaultStringLength(191);
         view()->composer('layout', function($view)
         {
             $view->with('week_count', count(\App\Week::all()));
