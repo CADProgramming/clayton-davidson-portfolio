@@ -713,14 +713,14 @@ INSERT INTO sections (id, title, post_id) VALUES (76, 'What barriers did you enc
 
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (180, 0, '- Lack of work done by other team member', 'He did one page again (1 easy ticket), while I did five different tickets', 76);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (181, 0, '- SCRUM master failed to be an effective SCRUM master', 'He didn\'t communicate with anyone for two whole weeks. He didn\'t show up to team meetings.', 76);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (182, 0, '- Team member completely gone', 'We were already a small group struggling to get work done. Now we are by far the smallest and least productive group in my stream despite how hard I work or how much work I get done.<br>', 76);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (182, 0, '- Team member completely gone', 'We were already a small group struggling to get work done. Now we are by far the smallest and least productive group in my stream despite how hard I work or how much work I get done.<br><br>', 76);
 
 
 
 
 
 INSERT INTO images (id, img_path, img_style) VALUES (39, './img/week-8/profileRoutes.PNG', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (40, './img/week-8/profile.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (40, './img/week-8/profile.png', 'width: 650px;');
 INSERT INTO images (id, img_path, img_style) VALUES (41, './img/week-8/generate.PNG', 'width: 650px;');
 
 
@@ -729,48 +729,48 @@ INSERT INTO weeks (id, week_start, week_end) VALUES (8, '2020-09-7', '2020-09-13
 
 
 
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (23, 'Class 1', TRUE, '2020-09-01', 8);
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (23, 'Class 1', TRUE, '2020-09-08', 8);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (77, 'What have you completed during class?', 23);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (183, 0, '- Portfolio work', 'Today I worked on my portfolio because all members of my team were absent and I needed to show them what I have completed in order to move on. Without this communication they would not be able to use anything that I have worked on because it is completely different to what is already there.', 57);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (183, 0, '- Portfolio work', 'Today I worked on my portfolio because all members of my team were absent and I needed to show them what I have completed in order to move on. Without this communication they would not be able to use anything that I have worked on because it is completely different to what is already there.', 77);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (78, 'What do you want to have completed by next class?', 23);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (184, 0, '- Highscore and user placeholder data', 'I have been working on generating users and highscores at random for different games. This will fill our database with some reasonable data on a fairly large scale. I would like to have this completed by the next class so that I can work on the homepage till the end of the sprint.', 58);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (184, 0, '- Highscore and user placeholder data', 'I have been working on generating users and highscores at random for different games. This will fill our database with some reasonable data on a fairly large scale. I would like to have this completed by the next class so that I can work on the homepage till the end of the sprint.', 78);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (79, 'How does this relate back to the 12 principles?', 23);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (185, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'This work that I have been doing despite my team breaking down due to communication problems, shows that I am able to keep myself organised and stay motivated. This allows me to keep producing work at a high standard.<br><br>', 59);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (185, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'This work that I have been doing despite my team breaking down due to communication problems, shows that I am able to keep myself organised and stay motivated. This allows me to keep producing work at a high standard.<br><br>', 79);
 
 
 
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (24, 'Class 2', TRUE, '2020-09-04', 8);
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (24, 'Class 2', TRUE, '2020-09-11', 8);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (80, 'What have you completed during class?', 24);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (186, 0, '- Setup home page data', 'I\'ve added top users to the home page where the top user is the user with the most highscores. It also displays the user\'s highest score. This was the last thing I needed to do to complete the home page.', 60);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (187, 1, '- Setup profile and user profile routes', 'I had to setup two different routes. One route, the /profile route, takes the user to their profile page and displays all of the details about the currently logged in user. The other route, /users/userid route, shows the information about a specific user in the database. I added links to the /users/userid routes to the home page for all the top 5 users.', 60);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (186, 0, '- Setup home page data', 'I\'ve added top users to the home page where the top user is the user with the most highscores. It also displays the user\'s highest score. This was the last thing I needed to do to complete the home page.', 80);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (187, 1, '- Setup profile and user profile routes', 'I had to setup two different routes. One route, the /profile route, takes the user to their profile page and displays all of the details about the currently logged in user. The other route, /users/userid route, shows the information about a specific user in the database. I added links to the /users/userid routes to the home page for all the top 5 users.', 80);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (39, 187, 39);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (188, 1, '- Implemented profile data in profile pages', 'For the /profile route I had to user the Auth::user model to integrate the user data into the profile page. For the other routes I used the user controller to bring through a user object from the backend with the correct user id.', 60);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (188, 1, '- Implemented profile data in profile pages', 'For the /profile route I had to user the Auth::user model to integrate the user data into the profile page. For the other routes I used the user controller to bring through a user object from the backend with the correct user id.', 80);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (40, 188, 40);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (81, 'What do you want to have completed by next class?', 24);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (189, 0, '- Merge into dev', 'I have completed all of my tickets for this sprint and the next class is the end of the sprint so I should aim to have all of my branches merged into dev so that I can make sure they are compatible with Taylor\'s work before presenting our progress.', 61);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (189, 0, '- Merge into dev', 'I have completed all of my tickets for this sprint and the next class is the end of the sprint so I should aim to have all of my branches merged into dev so that I can make sure they are compatible with Taylor\'s work before presenting our progress.', 81);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (82, 'How does this relate back to the 12 principles?', 24);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (190, 0, '- Principle 3 "Frequent delivery of working software"', 'This principle applies because we are doing our project work over set iterations, as two week sprints.', 62);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (191, 0, '- Principle 5 "Support, trust, and motivate the people involved"', 'Throughout this sprint I have been trying to motivate other people and keep everyone communicating even though I am not the SCRUM master for this sprint. I felt the responsibility to do this because our team\'s communication is falling apart and if we stop communicating then our team\'s effectiveness drops significantly.', 62);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (192, 0, '- Principle 6 "Enable face-to-face interactions"', 'We do most of our project work in class which enables us to interact directly with eachother which is the best form of communication especially when our work areas overlap.', 62);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (193, 0, '- Principle 8 "Agile processes to support a consistent development pace"', 'I have been maintaining my development pace of doing 3-4 tickets each sprint. This helps the project to maintain it\'s momentum.<br><br>', 62);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (190, 0, '- Principle 3 "Frequent delivery of working software"', 'This principle applies because we are doing our project work over set iterations, as two week sprints.', 82);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (191, 0, '- Principle 5 "Support, trust, and motivate the people involved"', 'Throughout this sprint I have been trying to motivate other people and keep everyone communicating even though I am not the SCRUM master for this sprint. I felt the responsibility to do this because our team\'s communication is falling apart and if we stop communicating then our team\'s effectiveness drops significantly.', 82);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (192, 0, '- Principle 6 "Enable face-to-face interactions"', 'We do most of our project work in class which enables us to interact directly with eachother which is the best form of communication especially when our work areas overlap.', 82);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (193, 0, '- Principle 8 "Agile processes to support a consistent development pace"', 'I have been maintaining my development pace of doing 3-4 tickets each sprint. This helps the project to maintain it\'s momentum.<br><br>', 82);
 
 
 
@@ -779,10 +779,10 @@ INSERT INTO posts (id, title, inclass, date, week_id) VALUES (25, 'Study', FALSE
 
 INSERT INTO sections (id, title, post_id) VALUES (83, 'What have you completed oustide of class?', 25);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (194, 1, '- Generating placeholder data', 'I created a admin part of the program that allows us to pull randomly generated users from an API to populate our database and make it more realistic. The other algorithm I wrote allows us to generate random highscores for random games. Now the website has some randomly generated data that helps us to show the client a realistic expectation of the website while it is in use by the public.', 63);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (194, 1, '- Generating placeholder data', 'I created a admin part of the program that allows us to pull randomly generated users from an API to populate our database and make it more realistic. The other algorithm I wrote allows us to generate random highscores for random games. Now the website has some randomly generated data that helps us to show the client a realistic expectation of the website while it is in use by the public.', 83);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (41, 194, 41);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (84, 'How does this relate back to the 12 principles?', 25);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (195, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'The fact that I have done this generation of placeholder data outside of class time, shows that I can work by the 11th principle of agile software development, working independantly which helps the team to be more effective.<br><br>', 64);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (195, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'The fact that I have done this generation of placeholder data outside of class time, shows that I can work by the 11th principle of agile software development, working independantly which helps the team to be more effective.<br><br>', 84);
