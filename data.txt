@@ -791,9 +791,8 @@ INSERT INTO contents (id, image_count, title, body, section_id) VALUES (195, 0, 
 
 
 
-INSERT INTO images (id, img_path, img_style) VALUES (42, './img/week-9/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (44, './img/week-9/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (42, './img/week-9/kanban.png', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 650px;');
 
 
 
@@ -808,7 +807,8 @@ INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed d
 
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- End of Sprint Reflection', 'I lead the team, (Taylor and myself), in a discussion about the performance over the last sprint and how we thought we did. Overall I was happy with the progress that I had made towards supporting our team after the continued absence of our team member. I think that as a SCRUM master I completed my duties effectively, even tried to get in contact with our absent team member, showing my commitment to the team.', 85);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (197, 0, '- Client Meeting', 'We then met with the client and discussed the direction our project was going to take over the next sprint. He gave us a bit of free reign as we have been given the challenge of changing our topic completely, from games and highscores to cars and car dealerships. This sprint will focus heavily on refactoring our code to make it back to the same point we are at with the new content.', 85);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (198, 0, '- Assignment of issues', 'After our client meeting Taylor assigned me the things that I would be doing this sprint. We came to the mutal conclusion that it would be best for me to work on refactoring the entire backend while Taylor worked on the contact page and changing some of the page titles.', 85);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (198, 1, '- Assignment of issues', 'After our client meeting Taylor assigned me the things that I would be doing this sprint. We came to the mutal conclusion that it would be best for me to work on refactoring the entire backend while Taylor worked on the contact page and changing some of the page titles.', 85);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (42, 198, 42);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
@@ -818,49 +818,31 @@ INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, 
 
 INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (185, 0, '- Value 3 "Customer Collaboration Over Contract Negotiation"', 'Our website design and development is leaning heavily on the desires, ideas and opinions of our client. The meeting we had today with our client continues to demonstrate the approach our team is taking throughout the project, maintaining the principles and values of agile development where the clients needs and ideas come first.', 79);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (185, 0, '- Value 4 "Responding to Change Over Following a Plan"', 'Due to our intentional lack of extensive planning - we are not planning out the entire project in one go, it allows us to have the freedom and flexibility to follow the clients ideas exactly. This type of development is useful especially under the given circumstances. Our client has just decided to completely change the entire purpose of our current project. Because we have no set plans, it makes it so that we can easily facilitate this very large change.', 79);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (185, 0, '- Principle 2 "Accommodate changing requirements throughout the development process"', 'Today we are making the first steps toward changing our website topic from games to cars. Because we have been following the agile methodology, we are able to easily change the direction of our project, without having to throw away any planning.', 79);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (185, 0, '- Principle 10 "Simplicity"', 'My goal is to refactor the database and at the moment that will be the only thing that I am focusing on. By doing something reasonably simple, but use my full attention, it will allow me to create a robust and effective database to support the new project direction.', 79);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (185, 0, '- Principle 12 "Regular reflections on how to become more effective"', 'At the start of this class I helped our team sit down and discuss the different aspects of this sprint. This helps the team members feel a sense of accountability wether good or bad, and helps us to set a higher bar for the next sprint; overall making our team more effective.<br><br>', 79);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- Value 3 "Customer Collaboration Over Contract Negotiation"', 'Our website design and development is leaning heavily on the desires, ideas and opinions of our client. The meeting we had today with our client continues to demonstrate the approach our team is taking throughout the project, maintaining the principles and values of agile development where the clients needs and ideas come first.', 87);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (201, 0, '- Value 4 "Responding to Change Over Following a Plan"', 'Due to our intentional lack of extensive planning - we are not planning out the entire project in one go, it allows us to have the freedom and flexibility to follow the clients ideas exactly. This type of development is useful especially under the given circumstances. Our client has just decided to completely change the entire purpose of our current project. Because we have no set plans, it makes it so that we can easily facilitate this very large change.', 87);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (202, 0, '- Principle 2 "Accommodate changing requirements throughout the development process"', 'Today we are making the first steps toward changing our website topic from games to cars. Because we have been following the agile methodology, we are able to easily change the direction of our project, without having to throw away any planning.', 87);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (203, 0, '- Principle 10 "Simplicity"', 'My goal is to refactor the database and at the moment that will be the only thing that I am focusing on. By doing something reasonably simple, but use my full attention, it will allow me to create a robust and effective database to support the new project direction.', 87);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (204, 0, '- Principle 12 "Regular reflections on how to become more effective"', 'At the start of this class I helped our team sit down and discuss the different aspects of this sprint. This helps the team members feel a sense of accountability wether good or bad, and helps us to set a higher bar for the next sprint; overall making our team more effective.<br><br>', 87);
 
 
 
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 8);
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (186, 0, '- Setup home page data', 'I\'ve added top users to the home page where the top user is the user with the most highscores. It also displays the user\'s highest score. This was the last thing I needed to do to complete the home page.', 80);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (187, 1, '- Setup profile and user profile routes', 'I had to setup two different routes. One route, the /profile route, takes the user to their profile page and displays all of the details about the currently logged in user. The other route, /users/userid route, shows the information about a specific user in the database. I added links to the /users/userid routes to the home page for all the top 5 users.', 80);
-INSERT INTO image_lists (id, content_id, image_id) VALUES (39, 187, 39);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (188, 1, '- Implemented profile data in profile pages', 'For the /profile route I had to user the Auth::user model to integrate the user data into the profile page. For the other routes I used the user controller to bring through a user object from the backend with the correct user id.', 80);
-INSERT INTO image_lists (id, content_id, image_id) VALUES (40, 188, 40);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 1, '- Completed the database diagram', 'I have completed the new plan for a site database. It uses modified models that already exist and adds new models like dealership and region.', 88);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (43, 205, 43);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (206, 0, '- Worked on portfolio', 'I am falling a bit behind on my portfolio so I dedicated some of today\'s class time to work on it.', 88);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (189, 0, '- Merge into dev', 'I have completed all of my tickets for this sprint and the next class is the end of the sprint so I should aim to have all of my branches merged into dev so that I can make sure they are compatible with Taylor\'s work before presenting our progress.', 81);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- Start working on models', 'I want to have started making migrations for the new models and the old models. This will mean that by the end of the next class I should have completed refactoring all of the models in the database and have added the new models as well. This is really important to the progression of the project, because data can\'t be inserted into the database until the database has been reconfigured. This puts a fair amount of pressure on this feature so I should aim to have it finished as soon as possible.', 89);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (190, 0, '- Principle 3 "Frequent delivery of working software"', 'This principle applies because we are doing our project work over set iterations, as two week sprints.', 82);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (191, 0, '- Principle 5 "Support, trust, and motivate the people involved"', 'Throughout this sprint I have been trying to motivate other people and keep everyone communicating even though I am not the SCRUM master for this sprint. I felt the responsibility to do this because our team\'s communication is falling apart and if we stop communicating then our team\'s effectiveness drops significantly.', 82);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (192, 0, '- Principle 6 "Enable face-to-face interactions"', 'We do most of our project work in class which enables us to interact directly with eachother which is the best form of communication especially when our work areas overlap.', 82);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (193, 0, '- Principle 8 "Agile processes to support a consistent development pace"', 'I have been maintaining my development pace of doing 3-4 tickets each sprint. This helps the project to maintain it\'s momentum.<br><br>', 82);
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (28, 'Study', FALSE, '2020-09-03', 8);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (91, 'What have you completed oustide of class?', 28);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (194, 1, '- Generating placeholder data', 'I created a admin part of the program that allows us to pull randomly generated users from an API to populate our database and make it more realistic. The other algorithm I wrote allows us to generate random highscores for random games. Now the website has some randomly generated data that helps us to show the client a realistic expectation of the website while it is in use by the public.', 83);
-INSERT INTO image_lists (id, content_id, image_id) VALUES (41, 194, 41);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (92, 'How does this relate back to the 12 principles?', 28);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (195, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'The fact that I have done this generation of placeholder data outside of class time, shows that I can work by the 11th principle of agile software development, working independantly which helps the team to be more effective.<br><br>', 84);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (208, 0, '- Principle 2 "Accommodate changing requirements throughout the development process"', 'The planning that I have done this week shows me taking into account the changing requirements of our client. Instead of continuing to implement the initial plan and project, I am changing the plan and restructuring the database.', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (209, 0, '- Principle 7 "Working software is the primary measure of progress"', 'I have put a large amount of work into getting our website to be functional again because of the agile principle that states that the measure of a project\'s progress is how much working software and working features it has.', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- Principle 9 "Attention to technical detail and design enhances agility"', 'The design of the database that I have been working on requires a large amount of technical detail. If the integrity of the database is comprimised then it makes the entire application useless. That is why it is so important to get the design correct.<br><br>', 90);
