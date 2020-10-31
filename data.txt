@@ -791,8 +791,8 @@ INSERT INTO contents (id, image_count, title, body, section_id) VALUES (195, 0, 
 
 
 
-INSERT INTO images (id, img_path, img_style) VALUES (42, './img/week-9/kanban.png', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (42, './img/week-9/kanban.png', 'width: 1300px;');
+INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
 
 
 
