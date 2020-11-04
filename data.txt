@@ -826,7 +826,7 @@ INSERT INTO contents (id, image_count, title, body, section_id) VALUES (204, 0, 
 
 
 
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-18', 9);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
@@ -846,3 +846,267 @@ INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (208, 0, '- Principle 2 "Accommodate changing requirements throughout the development process"', 'The planning that I have done this week shows me taking into account the changing requirements of our client. Instead of continuing to implement the initial plan and project, I am changing the plan and restructuring the database.', 90);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (209, 0, '- Principle 7 "Working software is the primary measure of progress"', 'I have put a large amount of work into getting our website to be functional again because of the agile principle that states that the measure of a project\'s progress is how much working software and working features it has.', 90);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- Principle 9 "Attention to technical detail and design enhances agility"', 'The design of the database that I have been working on requires a large amount of technical detail. If the integrity of the database is comprimised then it makes the entire application useless. That is why it is so important to get the design correct.<br><br>', 90);
+
+
+
+
+
+INSERT INTO images (id, img_path, img_style) VALUES (44, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (45, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (46, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (47, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (48, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (49, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (50, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (51, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (52, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (53, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (54, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (55, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (56, './img/week-10/', 'width: 650px;');
+
+
+
+INSERT INTO weeks (id, week_start, week_end) VALUES (10, '2020-09-21', '2020-09-27');
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (28, 'Class 1', TRUE, '2020-09-22', 10);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (90, 'What have you completed during class?', 28);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- Removed blade templating from the views', 'I went through all of the different views and removed all of the blade templates. I did this so that the rest of the team can still use the site and work on pages and formatting while I prepare the database and all of the new models. This allows the workflow of the group to contiue regardless of my progress on my tickets. I thought this would be the best thing to do with the current circumstances, making it so that I am not holding up the rest of the team.', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- Created all models from the plan', '', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- Created cars controller', '', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- Fixed user registration with new fields', '', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- Fixed car creation form in place of game creation form', '', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- Modified the car creation form with the new fields', '', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- Added make, model, and sub model creation forms', '', 90);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (91, 'What do you want to have completed by next class?', 28);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- Fix home page', '', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- Fix index page', '', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- Fix show car page', '', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- Fix profile page', '', 91);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (92, 'How does this relate back to the 12 principles?', 28);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 92);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 92);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 92);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 92);
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (29, 'Class 2', TRUE, '2020-09-25', 10);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (93, 'What have you completed during class?', 29);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 93);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (94, 'What do you want to have completed by next class?', 29);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 94);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (95, 'How does this relate back to the 12 principles?', 29);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 95);
+
+
+
+
+
+INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
+
+
+
+INSERT INTO weeks (id, week_start, week_end) VALUES (9, '2020-09-14', '2020-09-20');
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (26, 'Class 1', TRUE, '2020-09-15', 9);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed during class?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- ', '', 85);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- ', '', 86);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 87);
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 88);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 89);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 90);
+
+
+
+
+
+INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
+
+
+
+INSERT INTO weeks (id, week_start, week_end) VALUES (9, '2020-09-14', '2020-09-20');
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (26, 'Class 1', TRUE, '2020-09-15', 9);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed during class?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- ', '', 85);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- ', '', 86);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 87);
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 88);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 89);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 90);
+
+
+
+
+
+INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
+
+
+
+INSERT INTO weeks (id, week_start, week_end) VALUES (9, '2020-09-14', '2020-09-20');
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (26, 'Class 1', TRUE, '2020-09-15', 9);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed during class?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- ', '', 85);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- ', '', 86);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 87);
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 88);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 89);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 90);
+
+
+
+
+
+INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
+
+
+
+INSERT INTO weeks (id, week_start, week_end) VALUES (9, '2020-09-14', '2020-09-20');
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (26, 'Class 1', TRUE, '2020-09-15', 9);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed during class?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- ', '', 85);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- ', '', 86);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 87);
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 88);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 89);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 90);
