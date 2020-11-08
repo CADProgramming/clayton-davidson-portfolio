@@ -874,10 +874,10 @@ INSERT INTO weeks (id, week_start, week_end) VALUES (10, '2020-09-21', '2020-09-
 INSERT INTO posts (id, title, inclass, date, week_id) VALUES (28, 'Class 1', TRUE, '2020-09-22', 10);
 
 
-INSERT INTO sections (id, title, post_id) VALUES (90, 'What have you completed during class?', 28);
+INSERT INTO sections (id, title, post_id) VALUES (91, 'What have you completed during class?', 28);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (211, 0, '- Removed blade templating from the views', 'I went through all of the different views and removed all of the blade templates. I did this so that the rest of the team can still use the site and work on pages and formatting while I prepare the database and all of the new models. This allows the workflow of the group to contiue regardless of my progress on my tickets. I thought this would be the best thing to do with the current circumstances, making it so that I am not holding up the rest of the team.', 90);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (212, 7, '- Created all models from the plan', 'Using the plan I was working on last week, I constructed the new tables and data constraints between the new tables and the old tables. This involved me rewriting the migrations and creating new migrations. After I did this I successfully migrated the database and now it is ready for use.', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (211, 0, '- Removed blade templating from the views', 'I went through all of the different views and removed all of the blade templates. I did this so that the rest of the team can still use the site and work on pages and formatting while I prepare the database and all of the new models. This allows the workflow of the group to contiue regardless of my progress on my tickets. I thought this would be the best thing to do with the current circumstances, making it so that I am not holding up the rest of the team.', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (212, 7, '- Created all models from the plan', 'Using the plan I was working on last week, I constructed the new tables and data constraints between the new tables and the old tables. This involved me rewriting the migrations and creating new migrations. After I did this I successfully migrated the database and now it is ready for use.', 91);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (44, 212, 44);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (45, 212, 45);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (46, 212, 46);
@@ -885,51 +885,51 @@ INSERT INTO image_lists (id, content_id, image_id) VALUES (47, 212, 47);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (48, 212, 48);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (49, 212, 49);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (50, 212, 50);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (213, 0, '- Created cars controller', 'Basing it off of the game controller, I created a new controller that would be used for creating and viewing cars. This was needed urgently so that the views could have the blade tags reinserted.', 90);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (214, 0, '- Fixed user registration with new fields', 'I decided to add some new fields to the user model to help with expanding the site later on. Doing this now with all of the other refactoring of the database will save me a lot of hassle later on.', 90);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (215, 1, '- Fixed car creation form in place of game creation form', 'The car creation form is much more complicated than the game creation form so I spent a large amount of this week reworking it. I had to add all of the new fields including three select boxes where their content depends on the upper boxes selection. If the make is Toyota for example then the model box will only allow the user to select a model that belongs to Toyota. I added this functionality to the boxes using a jquery event that triggers on selection.', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (213, 0, '- Created cars controller', 'Basing it off of the game controller, I created a new controller that would be used for creating and viewing cars. This was needed urgently so that the views could have the blade tags reinserted.', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (214, 0, '- Fixed user registration with new fields', 'I decided to add some new fields to the user model to help with expanding the site later on. Doing this now with all of the other refactoring of the database will save me a lot of hassle later on.', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (215, 1, '- Fixed car creation form in place of game creation form', 'The car creation form is much more complicated than the game creation form so I spent a large amount of this week reworking it. I had to add all of the new fields including three select boxes where their content depends on the upper boxes selection. If the make is Toyota for example then the model box will only allow the user to select a model that belongs to Toyota. I added this functionality to the boxes using a jquery event that triggers on selection.', 91);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (51, 215, 51);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (216, 1, '- Added make, model, and sub model creation forms', 'Because the car creation form requires a make model and optional sub-model to be present in the database I made three forms that link to eachother so a user can create a make, model, sub-model, then a car.', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (216, 3, '- Added make, model, and sub model creation forms', 'Because the car creation form requires a make model and optional sub-model to be present in the database I made three forms that link to eachother so a user can create a make, model, sub-model, then a car.', 91);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (52, 216, 52);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (53, 216, 53);
 INSERT INTO image_lists (id, content_id, image_id) VALUES (54, 216, 54);
 
 
-INSERT INTO sections (id, title, post_id) VALUES (91, 'What do you want to have completed by next class?', 28);
+INSERT INTO sections (id, title, post_id) VALUES (92, 'What do you want to have completed by next class?', 28);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (217, 1, '- Fix home page', 'Now that I have sorted out the backend, I want to have started fixing the home page by reimplementing the blade templates for the new data and models.', 91);
-INSERT INTO image_lists (id, content_id, image_id) VALUES (55, 217, 55);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (218, 0, '- Fix index page', 'The index page will also need to be fixed showing the new data and the buy button. The buy button will allow the user to purchase the car, changing the ownership to their account.', 91);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (219, 1, '- Fix show car page', 'Because the show page was originally designed to have highscores, it will need to be changed a large amount. I will hopefully have time to do this while modifying the other pages.', 91);
-INSERT INTO image_lists (id, content_id, image_id) VALUES (56, 219, 56);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (220, 0, '- Fix profile page', 'The profile page will need some small changes based on the changes to the model. This is something simple that I can quickly get done.', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (217, 0, '- Fix home page', 'Now that I have sorted out the backend, I want to have started fixing the home page by reimplementing the blade templates for the new data and models.', 92);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (218, 0, '- Fix index page', 'The index page will also need to be fixed showing the new data and the buy button. The buy button will allow the user to purchase the car, changing the ownership to their account.', 92);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (219, 0, '- Fix show car page', 'Because the show page was originally designed to have highscores, it will need to be changed a large amount. I will hopefully have time to do this while modifying the other pages.', 92);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (220, 0, '- Fix profile page', 'The profile page will need some small changes based on the changes to the model. This is something simple that I can quickly get done.', 92);
 
 
-INSERT INTO sections (id, title, post_id) VALUES (92, 'How does this relate back to the 12 principles?', 28);
+INSERT INTO sections (id, title, post_id) VALUES (93, 'How does this relate back to the 12 principles?', 28);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (221, 0, '- Principle 1 "Customer satisfaction through early and continuous software delivery"', 'Completing the backend and aiming to fix all of the frontend will allow me and my team to have something working to show at the end of the sprint. Having working and presentable software is one of the main aims of agile software development.', 92);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (222, 0, '- Principle 2 "Accommodate changing requirements throughout the development process"', 'All of the changes I have made to the backend and changes I will make to the frontend over the rest of the sprint will fulfil the principle which states that we should be able to accomidate changes during the development process.', 92);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (223, 0, '- Principle 7 "Working software is the primary measure of progress"', 'By doing all of the crucial changes in this one sprint, it will allow me to present a working application back to our client.', 92);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (224, 0, '- Principle 10 "Simplicity"', 'This weeks work shows simplicity because I am not taking on any additional features or challenges other than that of the main goal of getting the new topic implemented in our website. If I had taken on additional features, it would mean that there would not be any working software by the end of the sprint. Simplicity allows me to focus on the most important aspects of the project.<br><br>', 92);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (221, 0, '- Principle 1 "Customer satisfaction through early and continuous software delivery"', 'Completing the backend and aiming to fix all of the frontend will allow me and my team to have something working to show at the end of the sprint. Having working and presentable software is one of the main aims of agile software development.', 93);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (222, 0, '- Principle 2 "Accommodate changing requirements throughout the development process"', 'All of the changes I have made to the backend and changes I will make to the frontend over the rest of the sprint will fulfil the principle which states that we should be able to accomidate changes during the development process.', 93);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (223, 0, '- Principle 7 "Working software is the primary measure of progress"', 'By doing all of the crucial changes in this one sprint, it will allow me to present a working application back to our client.', 93);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (224, 0, '- Principle 10 "Simplicity"', 'This weeks work shows simplicity because I am not taking on any additional features or challenges other than that of the main goal of getting the new topic implemented in our website. If I had taken on additional features, it would mean that there would not be any working software by the end of the sprint. Simplicity allows me to focus on the most important aspects of the project.<br><br>', 93);
 
 
 
 INSERT INTO posts (id, title, inclass, date, week_id) VALUES (29, 'Class 2', TRUE, '2020-09-25', 10);
 
 
-INSERT INTO sections (id, title, post_id) VALUES (93, 'What have you completed during class?', 29);
+INSERT INTO sections (id, title, post_id) VALUES (94, 'What have you completed during class?', 29);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (225, 0, '- Fixed all of the pages', 'This class I managed to fix all of the pages. I put all of the blade templating in and modified it to work with the new data in the backend. All of the different pages now correctly show the cars data that is stored in the database.', 93);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (94, 'What do you want to have completed by next class?', 29);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (226, 0, '- Make sure project has no small bugs', 'By the next class I will have gone over the project and checked for bugs that may have formed due to the changes on the backend.', 94);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (225, 2, '- Fixed all of the pages', 'This class I managed to fix all of the pages. I put all of the blade templating in and modified it to work with the new data in the backend. All of the different pages now correctly show the cars data that is stored in the database.', 94);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (55, 225, 55);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (56, 225, 56);
 
 
-INSERT INTO sections (id, title, post_id) VALUES (95, 'How does this relate back to the 12 principles?', 29);
+INSERT INTO sections (id, title, post_id) VALUES (95, 'What do you want to have completed by next class?', 29);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (227, 0, '- Principle 3 "Frequent delivery of working software"', 'By Completing all of these pages and getting our website back to the same standard of completion but with the new topic, it means that we can continue to provide our client with working and presentable software.<br><br>', 95);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (226, 0, '- Make sure project has no small bugs', 'By the next class I will have gone over the project and checked for bugs that may have formed due to the changes on the backend.', 95);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (96, 'How does this relate back to the 12 principles?', 29);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (227, 0, '- Principle 3 "Frequent delivery of working software"', 'By Completing all of these pages and getting our website back to the same standard of completion but with the new topic, it means that we can continue to provide our client with working and presentable software.<br><br>', 96);
 
 
 
