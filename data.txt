@@ -851,19 +851,19 @@ INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, 
 
 
 
-INSERT INTO images (id, img_path, img_style) VALUES (44, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (45, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (46, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (47, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (48, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (49, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (50, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (51, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (52, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (53, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (54, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (55, './img/week-10/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (56, './img/week-10/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (44, './img/week-10/cars.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (45, './img/week-10/dealership.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (46, './img/week-10/makes.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (47, './img/week-10/models.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (48, './img/week-10/previous_owners.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (49, './img/week-10/region.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (50, './img/week-10/sub_models.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (54, './img/week-10/car_create.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (51, './img/week-10/add_make.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (52, './img/week-10/add_model.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (53, './img/week-10/add_sub_model.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (55, './img/week-10/home.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (56, './img/week-10/show.PNG', 'width: 650px;');
 
 
 
@@ -877,18 +877,31 @@ INSERT INTO posts (id, title, inclass, date, week_id) VALUES (28, 'Class 1', TRU
 INSERT INTO sections (id, title, post_id) VALUES (90, 'What have you completed during class?', 28);
 
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (211, 0, '- Removed blade templating from the views', 'I went through all of the different views and removed all of the blade templates. I did this so that the rest of the team can still use the site and work on pages and formatting while I prepare the database and all of the new models. This allows the workflow of the group to contiue regardless of my progress on my tickets. I thought this would be the best thing to do with the current circumstances, making it so that I am not holding up the rest of the team.', 90);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (212, 0, '- Created all models from the plan', 'Using the plan I was working on last week, I constructed the new tables and data constraints between the new tables and the old tables. This involved me rewriting the migrations and creating new migrations. After I did this I successfully migrated the database and now it is ready for use.', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (212, 7, '- Created all models from the plan', 'Using the plan I was working on last week, I constructed the new tables and data constraints between the new tables and the old tables. This involved me rewriting the migrations and creating new migrations. After I did this I successfully migrated the database and now it is ready for use.', 90);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (44, 212, 44);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (45, 212, 45);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (46, 212, 46);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (47, 212, 47);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (48, 212, 48);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (49, 212, 49);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (50, 212, 50);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (213, 0, '- Created cars controller', 'Basing it off of the game controller, I created a new controller that would be used for creating and viewing cars. This was needed urgently so that the views could have the blade tags reinserted.', 90);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (214, 0, '- Fixed user registration with new fields', 'I decided to add some new fields to the user model to help with expanding the site later on. Doing this now with all of the other refactoring of the database will save me a lot of hassle later on.', 90);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (215, 0, '- Fixed car creation form in place of game creation form', 'The car creation form is much more complicated than the game creation form so I spent a large amount of this week reworking it. I had to add all of the new fields including three select boxes where their content depends on the upper boxes selection. If the make is Toyota for example then the model box will only allow the user to select a model that belongs to Toyota. I added this functionality to the boxes using a jquery event that triggers on selection.', 90);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (216, 0, '- Added make, model, and sub model creation forms', 'Because the car creation form requires a make model and optional sub-model to be present in the database I made three forms that link to eachother so a user can create a make, model, sub-model, then a car.', 90);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (215, 1, '- Fixed car creation form in place of game creation form', 'The car creation form is much more complicated than the game creation form so I spent a large amount of this week reworking it. I had to add all of the new fields including three select boxes where their content depends on the upper boxes selection. If the make is Toyota for example then the model box will only allow the user to select a model that belongs to Toyota. I added this functionality to the boxes using a jquery event that triggers on selection.', 90);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (51, 215, 51);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (216, 1, '- Added make, model, and sub model creation forms', 'Because the car creation form requires a make model and optional sub-model to be present in the database I made three forms that link to eachother so a user can create a make, model, sub-model, then a car.', 90);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (52, 216, 52);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (53, 216, 53);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (54, 216, 54);
 
 
 INSERT INTO sections (id, title, post_id) VALUES (91, 'What do you want to have completed by next class?', 28);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (217, 0, '- Fix home page', 'Now that I have sorted out the backend, I want to have started fixing the home page by reimplementing the blade templates for the new data and models.', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (217, 1, '- Fix home page', 'Now that I have sorted out the backend, I want to have started fixing the home page by reimplementing the blade templates for the new data and models.', 91);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (55, 217, 55);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (218, 0, '- Fix index page', 'The index page will also need to be fixed showing the new data and the buy button. The buy button will allow the user to purchase the car, changing the ownership to their account.', 91);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (219, 0, '- Fix show car page', 'Because the show page was originally designed to have highscores, it will need to be changed a large amount. I will hopefully have time to do this while modifying the other pages.', 91);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (219, 1, '- Fix show car page', 'Because the show page was originally designed to have highscores, it will need to be changed a large amount. I will hopefully have time to do this while modifying the other pages.', 91);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (56, 219, 56);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (220, 0, '- Fix profile page', 'The profile page will need some small changes based on the changes to the model. This is something simple that I can quickly get done.', 91);
 
 
@@ -922,190 +935,3 @@ INSERT INTO contents (id, image_count, title, body, section_id) VALUES (227, 0, 
 
 
 
-INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
-
-
-
-INSERT INTO weeks (id, week_start, week_end) VALUES (9, '2020-09-14', '2020-09-20');
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (26, 'Class 1', TRUE, '2020-09-15', 9);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed during class?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- ', '', 85);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- ', '', 86);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 87);
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 88);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 89);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 90);
-
-
-
-
-
-INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
-
-
-
-INSERT INTO weeks (id, week_start, week_end) VALUES (9, '2020-09-14', '2020-09-20');
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (26, 'Class 1', TRUE, '2020-09-15', 9);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed during class?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- ', '', 85);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- ', '', 86);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 87);
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 88);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 89);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 90);
-
-
-
-
-
-INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
-
-
-
-INSERT INTO weeks (id, week_start, week_end) VALUES (9, '2020-09-14', '2020-09-20');
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (26, 'Class 1', TRUE, '2020-09-15', 9);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed during class?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- ', '', 85);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- ', '', 86);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 87);
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 88);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 89);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 90);
-
-
-
-
-
-INSERT INTO images (id, img_path, img_style) VALUES (43, './img/week-9/plan.PNG', 'width: 1300px;');
-
-
-
-INSERT INTO weeks (id, week_start, week_end) VALUES (9, '2020-09-14', '2020-09-20');
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (26, 'Class 1', TRUE, '2020-09-15', 9);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (85, 'What have you completed during class?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (196, 0, '- ', '', 85);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (86, 'What do you want to have completed by next class?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (199, 0, '- ', '', 86);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (87, 'How does this relate back to the 12 principles?', 26);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (200, 0, '- ', '<br><br>', 87);
-
-
-
-INSERT INTO posts (id, title, inclass, date, week_id) VALUES (27, 'Class 2', TRUE, '2020-09-11', 9);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (88, 'What have you completed during class?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (205, 0, '- ', '', 88);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (89, 'What do you want to have completed by next class?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (207, 0, '- ', '', 89);
-
-
-INSERT INTO sections (id, title, post_id) VALUES (90, 'How does this relate back to the 12 principles?', 27);
-
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (210, 0, '- <br><br>', 90);
