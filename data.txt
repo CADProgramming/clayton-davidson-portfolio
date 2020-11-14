@@ -962,3 +962,46 @@ INSERT INTO sections (id, title, post_id) VALUES (100, 'What barriers did you en
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (235, 0, '- Other memebers trying to work on the front end with a broken backend', 'The main issue for this sprint was the difficulty of having the other team member working on the frontend with me dismantling the backend. I managed to reduce the effect this had on my other team member by removing all of the blade formatting from the templates. This allowed the other team member to modify the pages without needing a functional database.', 100);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (236, 0, '- Communication issues', 'After 4 weeks of class Ian still has not bothered to message any of us about his whereabouts. I have to assume that he will not return and our already small group of three will permenantly be a group of two. As far as the rest of the project goes I think that our progress will not be far off what we have now.', 100);
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (237, 0, '- Lack of work from team members', 'The only team member that remains in my team does not do enough work. He does get some html and css done however if you look at the quantity of work and note that it took two weeks, there clearly could be a major improvement. This means that the success or failure of our project is essentially in my hands. This is putting a larger and larger strain on me as we get closer to the end of the semester and the workloads from other subjects are increasing.<br><br>', 100);
+
+
+
+
+
+INSERT INTO images (id, img_path, img_style) VALUES (57, './img/week-11/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (58, './img/week-11/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (59, './img/week-11/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (60, './img/week-11/', 'width: 650px;');
+
+
+
+INSERT INTO weeks (id, week_start, week_end) VALUES (11, '2020-09-28', '2020-10-4');
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (31, 'Class 1', TRUE, '2020-09-29', 11);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (101, 'What have you completed during class?', 31);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- Meeting with client', 'We met as a group with our client and discussed what would most likely be the last effective sprint. Our group was tasked with creating the dealership pages and regions as well as a feature that I suggested that allows the users to purchase eachother\'s cars.', 101);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- Planning Sprint 5', 'I then went over our planning stage with my teamate. I assigned him the dealership pages and assigned myself the car dealership and region in the backend as well as the buy feature.', 102);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (103, 'How does this relate back to the 12 principles?', 31);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- Principle 6 "Enable face-to-face interactions"', 'I helped organise the sprint with my team member during class. Because we are both in the same location it makes it very easy to communicate and arrange the work.', 103);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- Principle 10 "Simplicity"', 'We are taking on less features this sprint to try and relieve the pressure put on our group due to our size and also because the project is coming to a close and it is better to have a finished project with less bugs rather than an almost finished project.<br><br>', 104);
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (32, 'Class 2', TRUE, '2020-10-2', 11);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (104, 'What have you completed during class?', 32);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- ', '', 104);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (106, 'How does this relate back to the 12 principles?', 32);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- ', '<br><br>', 106);
