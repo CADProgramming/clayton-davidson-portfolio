@@ -197,7 +197,7 @@ INSERT INTO images (id, img_path, img_style) VALUES (17, './img/week-3/regoform.
 INSERT INTO images (id, img_path, img_style) VALUES (18, './img/week-3/testhomepage.PNG', 'width: 850px;');
 INSERT INTO images (id, img_path, img_style) VALUES (19, './img/week-3/userdata.PNG', 'width: 1300px;');
 INSERT INTO images (id, img_path, img_style) VALUES (61, './img/week-3/team-meeting.png', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (62, './img/week-3/database-plan.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (62, './img/week-3/database-plan.PNG', 'width: 1000px;');
 
 
 
@@ -971,10 +971,10 @@ INSERT INTO contents (id, image_count, title, body, section_id) VALUES (237, 0, 
 
 
 
-INSERT INTO images (id, img_path, img_style) VALUES (57, './img/week-11/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (58, './img/week-11/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (59, './img/week-11/', 'width: 650px;');
-INSERT INTO images (id, img_path, img_style) VALUES (60, './img/week-11/', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (57, './img/week-11/kanban.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (58, './img/week-11/account_fk.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (59, './img/week-11/account_init.PNG', 'width: 650px;');
+INSERT INTO images (id, img_path, img_style) VALUES (60, './img/week-11/topup.PNG', 'width: 650px;');
 
 
 
@@ -987,25 +987,31 @@ INSERT INTO posts (id, title, inclass, date, week_id) VALUES (31, 'Class 1', TRU
 
 INSERT INTO sections (id, title, post_id) VALUES (101, 'What have you completed during class?', 31);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- Meeting with client', 'We met as a group with our client and discussed what would most likely be the last effective sprint. Our group was tasked with creating the dealership pages and regions as well as a feature that I suggested that allows the users to purchase eachother\'s cars.', 101);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- Planning Sprint 5', 'I then went over our planning stage with my teamate. I assigned him the dealership pages and assigned myself the car dealership and region in the backend as well as the buy feature.', 102);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (238, 0, '- Meeting with client', 'We met as a group with our client and discussed what would most likely be the last effective sprint. Our group was tasked with creating the dealership pages and regions as well as a feature that I suggested that allows the users to purchase eachother\'s cars.', 101);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (239, 1, '- Planning Sprint 5', 'I then went over our planning stage with my teamate. I assigned him the dealership pages and assigned myself the car dealership and region in the backend as well as the buy feature.', 101);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (59, 239, 57);
 
 
-INSERT INTO sections (id, title, post_id) VALUES (103, 'How does this relate back to the 12 principles?', 31);
+INSERT INTO sections (id, title, post_id) VALUES (102, 'How does this relate back to the 12 principles?', 31);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- Principle 6 "Enable face-to-face interactions"', 'I helped organise the sprint with my team member during class. Because we are both in the same location it makes it very easy to communicate and arrange the work.', 103);
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- Principle 10 "Simplicity"', 'We are taking on less features this sprint to try and relieve the pressure put on our group due to our size and also because the project is coming to a close and it is better to have a finished project with less bugs rather than an almost finished project.<br><br>', 104);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (240, 0, '- Principle 6 "Enable face-to-face interactions"', 'I helped organise the sprint with my team member during class. Because we are both in the same location it makes it very easy to communicate and arrange the work.', 102);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (241, 0, '- Principle 10 "Simplicity"', 'We are taking on less features this sprint to try and relieve the pressure put on our group due to our size and also because the project is coming to a close and it is better to have a finished project with less bugs rather than an almost finished project.<br><br>', 102);
 
 
 
 INSERT INTO posts (id, title, inclass, date, week_id) VALUES (32, 'Class 2', TRUE, '2020-10-2', 11);
 
 
-INSERT INTO sections (id, title, post_id) VALUES (104, 'What have you completed during class?', 32);
+INSERT INTO sections (id, title, post_id) VALUES (103, 'What have you completed during class?', 32);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- ', '', 104);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (242, 0, '- Worked on buy now feature', 'This sprint I set myself the task of creating a buy now feature to our website. It will allow the user to add funds to their account, buy another registered user\'s car and transfer the ownership from the old to the new user.', 103);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (243, 2, '- Adding new account model', 'The account model is for the user so that they can have financial information added to their login.', 103);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (60, 243, 58);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (61, 243, 59);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (244, 1, '- Adding buy topup form to add funds to account', 'After working on the buy now feature today, I have managed to complete the top up form. It is now ready for me to program the backend so that it stores the new amount of credit in the database.', 103);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (62, 244, 60);
 
 
-INSERT INTO sections (id, title, post_id) VALUES (106, 'How does this relate back to the 12 principles?', 32);
+INSERT INTO sections (id, title, post_id) VALUES (104, 'How does this relate back to the 12 principles?', 32);
 
-INSERT INTO contents (id, image_count, title, body, section_id) VALUES (, 0, '- ', '<br><br>', 106);
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (245, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'Our team has pretty much disolved by this point. The only thing keeping the project moving forward is essentially individual work. I have been continuing to do my best to keep our project moving forward, but it has stagnated a lot. I have been independantly working on my buy car feature and will continue to contribute featrues each sprint even though the rest of my team does not contribute much. This demonstrates the importance of having the ability to self motivate and keep yourself working.<br><br>', 104);
