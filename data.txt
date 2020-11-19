@@ -1015,3 +1015,54 @@ INSERT INTO image_lists (id, content_id, image_id) VALUES (62, 244, 60);
 INSERT INTO sections (id, title, post_id) VALUES (104, 'How does this relate back to the 12 principles?', 32);
 
 INSERT INTO contents (id, image_count, title, body, section_id) VALUES (245, 0, '- Principle 11 "Self-organizing teams encourage great architectures, requirements, and designs"', 'Our team has pretty much disolved by this point. The only thing keeping the project moving forward is essentially individual work. I have been continuing to do my best to keep our project moving forward, but it has stagnated a lot. I have been independantly working on my buy car feature and will continue to contribute featrues each sprint even though the rest of my team does not contribute much. This demonstrates the importance of having the ability to self motivate and keep yourself working.<br><br>', 104);
+
+
+
+
+
+INSERT INTO images (id, img_path, img_style) VALUES (63, './img/week-12/topup_back_end.PNG', 'width: 650px;');
+
+
+
+INSERT INTO weeks (id, week_start, week_end) VALUES (12, '2020-10-5', '2020-10-11');
+
+
+
+INSERT INTO posts (id, title, inclass, date, week_id) VALUES (33, 'Class 1', TRUE, '2020-10-6', 12);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (105, 'What have you completed during class?', 33);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (246, 1, '- Top up now adds funds to account', 'The user can now visit the top up page and add funds to their account.', 105);
+INSERT INTO image_lists (id, content_id, image_id) VALUES (63, 246, 63);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (106, 'How does this relate back to the 12 principles?', 33);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (247, 0, '- Principle 7 "Working software is the primary measure of progress"', 'Although progress has slowed dramatically due to our deteriorating group dynamic, this completed top up feature shows that I am still trying my best to produce working features for the client.<br><br>', 106);
+
+
+
+
+
+INSERT INTO posts (id, title, inclass, sprint, date, week_id) VALUES (34, 'Personal Sprint Reflection', FALSE, TRUE, '2020-01-01', 11);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (107, 'What did you do well?', 34);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (248, 0, '- Kept working on features', 'Even though my group is highly unmotivated due to the fact that all the other groups have essentially left us behind with regards to progress; I have still managed to stay motivated enough to get some of the remaining features done like the buy car feature.', 107);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (108, 'What could you have done better?', 34);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (249, 0, '- Communicate more', 'My communication has dropped off again, but it is harder and harder to communicate with a team that can\'t be bothered communicating their progress, can\'t be bothered to show up to team meetings, can\'t be bothered to show up at all and can\'t be bothered to get any serious amount of work done. Getting a few pages of html with horrendous styling done over a two week period is a meaningless amount of progress. I know it\'s no excuse but trying to communicate with people who don\'t care about the group or the project is really difficult. Etc. Hey team member what have you done? Essentially nothing. Forget I asked.', 108);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (109, 'What lessons did you learn?', 34);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (250, 0, '- If you get stuck with a group that doesn\'t care, no amount of effort can change that', 'This paper has no consequences. People can get by without doing any work. My grades for this paper will suffer due to some other people not caring. It\'s a good lesson to learn that a large amount of people just don\'t care. At least in a real world scenario they would be fired. If this is too blunt I apologize, but I\'m used to my grades being a representation of my hardwork and effort, not somebody else\'s. I hope you can look past the absolute failure that was my group and see that I worked hard and gave this project my absolute best despite the circumstances.', 109);
+
+
+INSERT INTO sections (id, title, post_id) VALUES (110, 'What barriers did you encounter?', 34);
+
+INSERT INTO contents (id, image_count, title, body, section_id) VALUES (251, 0, '- Lack of work', 'The main issue with this sprint and many others is the lack of work. This can be broken down into two main causes - people who don\'t care and people who don\'t get any work done.<br><br>', 110);
